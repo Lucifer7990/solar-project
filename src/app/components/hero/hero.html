@@ -1,0 +1,35 @@
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-eco-dark">
+  <!-- Background with overlay (we use a solid color/gradient since video/image might not load properly, or use an image from data) -->
+  <div class="absolute inset-0 bg-gradient-to-r from-eco-dark to-slate-900 opacity-90 z-10"></div>
+  <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1600&auto=format&fit=crop');"></div>
+
+  <div class="relative z-20 max-w-5xl mx-auto px-6 text-center text-white mt-16">
+    <div class="inline-block mb-6 px-4 py-2 rounded-full border border-eco-green text-eco-green text-sm font-bold tracking-wider uppercase bg-eco-dark bg-opacity-50">
+      Leading the Transition to Clean Energy
+    </div>
+
+    <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+      Power Your Future With <br>
+      <span class="text-eco-green">Clean Energy</span>
+    </h2>
+
+    <p class="max-w-3xl mx-auto text-lg md:text-2xl text-slate-300 leading-relaxed mb-10">
+      {{ data.description }}
+    </p>
+
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="#calculator" class="w-full sm:w-auto bg-eco-green hover:bg-emerald-400 text-white font-bold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl text-lg">
+        Calculate Savings
+      </a>
+
+      <a href="#contact" class="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-eco-dark px-8 py-4 rounded-full transition-all font-bold text-lg">
+        Request Free Quote
+      </a>
+    </div>
+  </div>
+  
+  <!-- Decorative Bottom Curve/Shape (pure css) -->
+  <div class="absolute bottom-0 w-full z-20 overflow-hidden" style="height: 50px;">
+    <div class="w-[150%] h-[200px] bg-white rounded-[50%] absolute bottom-[-150px] left-[-25%]"></div>
+  </div>
+</section>
