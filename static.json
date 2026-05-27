@@ -1,0 +1,6 @@
+{
+  "root": "dist/solar-project-letest/browser",
+  "routes": {
+    "/**": "index.html"
+  }
+}
