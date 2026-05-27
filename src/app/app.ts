@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { DataService } from './services/data.service';
 import { HeaderComponent } from './components/header/header';
 import { HeroComponent } from './components/hero/hero';
 import { CalculatorComponent } from './components/calculator/calculator';
@@ -25,4 +26,11 @@ import { FooterComponent } from './components/footer/footer';
 })
 export class AppComponent {
   title = 'Australian Premium Solar';
+  dataService = inject(DataService);
+
+  get whatsappLink() {
+    const phone = this.dataService.siteData().contact.phone.replace(/\D/g, '');
+    const waNumber = phone.startsWith('0') ? '61' + phone.substring(1) : phone;
+    return `https://wa.me/${waNumber}`;
+  }
 }

@@ -2,6 +2,7 @@ export const siteData = {
   companyName: 'Australian Premium Solar',
   tagline: 'Premium Solar & Battery Solutions For WA',
   description: 'Australian Premium Solar is a proudly WA-based company delivering premium solar and battery installations with experienced in-house installers and trusted local workmanship.',
+  whatsappLink: 'https://wa.me/919876543210',
   contact: {
     phone: '0485 902 696',
     email: 'info@australianpremiumsolar.com.au',
@@ -12,22 +13,22 @@ export const siteData = {
     {
       title: 'Residential Solar',
       description: 'Premium rooftop solar systems designed for WA homes using high-quality panels, inverters, and expert local installation.',
-      iconText: 'RS'
+      iconText: 'solar_power'
     },
     {
       title: 'Battery Storage',
       description: 'Store your excess solar energy and reduce dependence on rising electricity costs with advanced battery solutions.',
-      iconText: 'BS'
+      iconText: 'battery_charging_full'
     },
     {
       title: 'Commercial Solar',
       description: 'Custom-designed commercial solar solutions to help businesses reduce operating costs and improve energy efficiency.',
-      iconText: 'CS'
+      iconText: 'domain'
     },
     {
       title: 'CEC Certified Installations',
       description: 'All installations are completed by experienced local WA installers and CEC-certified professionals.',
-      iconText: 'CI'
+      iconText: 'verified'
     }
   ],
   whyChoose: [
@@ -57,6 +58,10 @@ export const siteData = {
       role: 'Resident, Fremantle'
     }
   ],
+  images: {
+    heroBg: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1600&auto=format&fit=crop',
+    whyChooseBg: 'https://images.unsplash.com/photo-1641290126851-610704d11b23?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  },
   gallery: [
     'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=1200&auto=format&fit=crop',

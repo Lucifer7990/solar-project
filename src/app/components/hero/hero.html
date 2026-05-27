@@ -1,9 +1,9 @@
 <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-eco-dark">
   <!-- Background with overlay (we use a solid color/gradient since video/image might not load properly, or use an image from data) -->
   <div class="absolute inset-0 bg-gradient-to-r from-eco-dark to-slate-900 opacity-90 z-10"></div>
-  <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1600&auto=format&fit=crop');"></div>
+  <div class="absolute inset-0 z-0 bg-cover bg-center" [style.background-image]="'url(' + data.images.heroBg + ')'"></div>
 
-  <div class="relative z-20 max-w-5xl mx-auto px-6 text-center text-white mt-16">
+  <div class="relative z-30 max-w-5xl mx-auto px-6 pb-20 text-center text-white mt-16">
     <div class="inline-block mb-6 px-4 py-2 rounded-full border border-eco-green text-eco-green text-sm font-bold tracking-wider uppercase bg-eco-dark bg-opacity-50">
       Leading the Transition to Clean Energy
     </div>

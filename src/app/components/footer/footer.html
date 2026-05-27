@@ -7,7 +7,7 @@
       </p>
       <div class="w-12 h-1 bg-eco-green rounded-full"></div>
     </div>
-    
+
     <div>
       <h4 class="text-white font-bold text-lg mb-4">Quick Links</h4>
       <ul class="space-y-2 text-sm">
@@ -22,8 +22,12 @@
       <h4 class="text-white font-bold text-lg mb-4">Certifications</h4>
       <div class="flex gap-4">
         <!-- Pure CSS generic certification badges -->
-        <div class="w-16 h-16 rounded-full border-2 border-slate-700 flex items-center justify-center font-bold text-xs text-slate-500">CEC</div>
-        <div class="w-16 h-16 rounded-full border-2 border-slate-700 flex items-center justify-center font-bold text-xs text-slate-500">ISO</div>
+        <div
+          class="w-16 h-16 rounded-full border-2 border-slate-700 flex items-center justify-center font-bold text-xs text-slate-500">
+          CEC</div>
+        <div
+          class="w-16 h-16 rounded-full border-2 border-slate-700 flex items-center justify-center font-bold text-xs text-slate-500">
+          ISO</div>
       </div>
     </div>
   </div>
@@ -31,4 +35,12 @@
   <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-slate-900 text-center text-xs">
     &copy; {{ year }} {{ data.companyName }}. All Rights Reserved.
   </div>
+
+
+  <a [href]="data.whatsappLink" target="_blank" rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 text-white">
+    <!-- Using Google Material Symbols for chat/whatsapp style -->
+    <span class="material-symbols-outlined text-4xl">chat</span>
+  </a>
+
 </footer>
