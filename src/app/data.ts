@@ -1,11 +1,11 @@
 export const siteData = {
-  companyName: 'Australian Premium Solar',
+  companyName: 'Aussie Premium Solar',
   tagline: 'Premium Solar & Battery Solutions For WA',
   description: 'Australian Premium Solar is a proudly WA-based company delivering premium solar and battery installations with experienced in-house installers and trusted local workmanship.',
   whatsappLink: 'https://wa.me/919876543210',
   contact: {
     phone: '0485 902 696',
-    email: 'info@australianpremiumsolar.com.au',
+    email: 'info@Aussiesolar.com',
     address: 'Western Australia, Australia',
     partner: 'Wise Solar Electrical – WA'
   },
