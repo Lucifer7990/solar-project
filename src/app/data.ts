@@ -7,7 +7,14 @@ export const siteData = {
     phone: '0485 902 696',
     email: 'info@Aussiesolar.com',
     address: 'Western Australia, Australia',
-    partner: 'Wise Solar Electrical – WA'
+    partner: 'Wise Solar Electrical – WA',
+    // EmailJS Configuration
+    // Go to https://www.emailjs.com/ to create an account and get these keys
+    emailJS: {
+      serviceId: 'service_SolarWeb', // e.g., 'service_xxxxx'
+      templateId: 'template_solarWeb', // e.g., 'template_xxxxx'
+      publicKey: '60NMyMvvjVUgnbMKG', // e.g., 'YOUR_PUBLIC_KEY' (User ID)
+    }
   },
   services: [
     {
