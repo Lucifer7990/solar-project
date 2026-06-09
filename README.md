@@ -54,6 +54,28 @@ ng e2e
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
+## EmailJS setup
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 1. Create your EmailJS setup:
+1. Go to [EmailJS.com](https://www.emailjs.com/) and create a free account.
+2. **Add a New Service:** Go to "Email Services" and click "Add New Service" (e.g., choose Gmail, Outlook, etc. and connect your account). This will generate a **Service ID** (like `service_xxxxx`).
+3. **Create an Email Template:** Go to "Email Templates" and click "Create New Template". 
+   * In your template, you can use these exact variables that we are passing from the form: 
+     - `{{from_name}}`
+     - `{{reply_to}}`
+     - `{{phone_number}}`
+     - `{{message}}`
+   * Save the template and note down the **Template ID** (like `template_xxxxx`).
+4. **Get your Public Key:** Go to "Account" (in the sidebar menu) -> "API Keys". Copy your **Public Key**.
+
+### 2. Update your Configuration File:
+Once you have those three keys, simply open `src/app/data.ts` and replace the placeholders:
+
+```typescript
+// in src/app/data.ts
+emailJS: {
+  serviceId: 'YOUR_SERVICE_ID_HERE',   // Replace with your Service ID
+  templateId: 'YOUR_TEMPLATE_ID_HERE', // Replace with your Template ID
+  publicKey: 'YOUR_PUBLIC_KEY_HERE',   // Replace with your Public Key
+}
+```
