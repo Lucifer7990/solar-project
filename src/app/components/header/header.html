@@ -1,21 +1,25 @@
-<header class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
+<header [ngClass]="isHeaderWhite ? 'bg-white shadow-sm border-b border-gray-100' : 'bg-transparent border-b border-transparent'" 
+        class="fixed w-full top-0 z-50 transition-all duration-300">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-    <div class="flex items-center gap-3">
-      <img src="/logo.png" alt="Aussie Premium Solar Logo" class="h-12 w-auto object-contain" />
+    <a routerLink="/" class="flex items-center gap-3 cursor-pointer group">
+      <img src="/logo.png" alt="Aussie Premium Solar Logo" class="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
       <div>
-        <h1 class="text-xl font-bold tracking-tight text-eco-dark">
+        <h1 class="text-xl font-bold tracking-tight transition-colors duration-300"
+            [ngClass]="isHeaderWhite ? 'text-eco-dark group-hover:text-eco-green' : 'text-white group-hover:text-green-300'">
           {{ data.companyName }}
         </h1>
-        <p class="text-xs text-gray-500 font-medium">WA Solar Specialists</p>
+        <p class="text-xs font-medium transition-colors duration-300"
+           [ngClass]="isHeaderWhite ? 'text-gray-500' : 'text-white/80'">WA Solar Specialists</p>
       </div>
-    </div>
+    </a>
 
-    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold transition-colors duration-300"
+         [ngClass]="isHeaderWhite ? 'text-slate-600' : 'text-white/90'">
       <a href="#benefits" class="hover:text-eco-green transition-colors">Benefits</a>
       <a href="#services" class="hover:text-eco-green transition-colors">Services</a>
       <a href="#calculator" class="hover:text-eco-green transition-colors">Calculator</a>
       <a href="#testimonials" class="hover:text-eco-green transition-colors">Testimonials</a>
-      <a href="blog" class="hover:text-eco-green transition-colors">Blogs</a>
+      <a href="/blog" class="hover:text-eco-green transition-colors">Blogs</a>
       
       <a href="#contact" class="bg-eco-green hover:bg-eco-dark text-white px-6 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg font-bold">
         Get Quote

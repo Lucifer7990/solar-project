@@ -1,7 +1,7 @@
 <div class="min-h-screen bg-white text-slate-800 font-sans flex flex-col">
   <app-header></app-header>
   
-  <main class="flex-grow">
+  <main class="flex-grow transition-all duration-300" [ngClass]="{'pt-20': !isHomePage}">
     <router-outlet></router-outlet>
   </main>
 
