@@ -19,6 +19,7 @@ export class HeaderComponent {
   
   isScrolled = false;
   isHomePage = true;
+  isMobileMenuOpen = false;
 
   constructor() {
     this.router.events.pipe(
@@ -29,11 +30,19 @@ export class HeaderComponent {
   }
 
   get isHeaderWhite() {
-    return !this.isHomePage || this.isScrolled;
+    return !this.isHomePage || this.isScrolled || this.isMobileMenuOpen;
   }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 10;
+  }
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  closeMobileMenu() {
+    this.isMobileMenuOpen = false;
   }
 }

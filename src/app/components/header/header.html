@@ -1,9 +1,9 @@
 <header [ngClass]="isHeaderWhite ? 'bg-white shadow-sm border-b border-gray-100' : 'bg-transparent border-b border-transparent'" 
         class="fixed w-full top-0 z-50 transition-all duration-300">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative z-50 bg-inherit">
     <a href="#hero" class="flex items-center gap-3 cursor-pointer group">
       <img src="/logo.png" alt="Aussie Premium Solar Logo" class="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-      <div>
+      <div class="hidden sm:block">
         <h1 class="text-xl font-bold tracking-tight transition-colors duration-300"
             [ngClass]="isHeaderWhite ? 'text-eco-dark group-hover:text-eco-green' : 'text-white group-hover:text-green-300'">
           {{ data.companyName }}
@@ -13,6 +13,7 @@
       </div>
     </a>
 
+    <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center gap-8 text-sm font-semibold transition-colors duration-300"
          [ngClass]="isHeaderWhite ? 'text-slate-600' : 'text-white/90'">
       <a href="#benefits" class="hover:text-eco-green transition-colors">Benefits</a>
@@ -22,6 +23,28 @@
       <a href="/blog" class="hover:text-eco-green transition-colors">Blogs</a>
       
       <a href="#contact" class="bg-eco-green hover:bg-eco-dark text-white px-6 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg font-bold">
+        Get Quote
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button (click)="toggleMobileMenu()" class="md:hidden flex items-center focus:outline-none transition-colors duration-300"
+            [ngClass]="isHeaderWhite ? 'text-eco-dark hover:text-eco-green' : 'text-white hover:text-green-300'">
+      <span class="material-symbols-outlined text-3xl">{{ isMobileMenuOpen ? 'close' : 'menu' }}</span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="md:hidden absolute w-full left-0 bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out"
+       [ngClass]="isMobileMenuOpen ? 'max-h-screen border-t border-gray-100 opacity-100' : 'max-h-0 opacity-0'">
+    <nav class="flex flex-col px-6 py-4 gap-4 text-slate-700 text-base font-semibold">
+      <a href="#benefits" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Benefits</a>
+      <a href="#services" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Services</a>
+      <a href="#calculator" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Calculator</a>
+      <a href="#testimonials" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Testimonials</a>
+      <a href="/blog" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Blogs</a>
+      
+      <a href="#contact" (click)="closeMobileMenu()" class="bg-eco-green hover:bg-eco-dark text-white text-center px-6 py-3 rounded-full transition-all shadow-md mt-2 font-bold">
         Get Quote
       </a>
     </nav>
