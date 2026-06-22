@@ -16,6 +16,15 @@ export const siteData = {
       publicKey: '60NMyMvvjVUgnbMKG', // e.g., 'YOUR_PUBLIC_KEY' (User ID)
     }
   },
+  suppliers: [
+    { name: 'AlphaESS', logo: '/AlphaESS.png' },
+    { name: 'FoxESS', logo: '/FoxESS.png' },
+    { name: 'JA', logo: '/JA.png' },
+    { name: 'JINKO', logo: '/JINKO.svg' },
+    { name: 'GoodWe', logo: '/GoodWe.png' },
+    { name: 'TRINA', logo: '/TRINA.jpg' },
+    { name: 'SigEnergy', logo: '/SigEnergy.png' }
+  ],
   services: [
     {
       title: 'Residential Solar',

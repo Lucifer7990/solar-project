@@ -1,0 +1,29 @@
+<section class="py-12 bg-white overflow-hidden border-t border-slate-100">
+  <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
+    <h3 class="text-xl font-bold text-slate-400 uppercase tracking-wider">Our suppliers</h3>
+  </div>
+  
+  <div class="relative w-full overflow-hidden flex items-center h-24 md:h-32 mask-image-fade">
+    <div class="slider-track flex w-max" [style.animationDuration]="animationDuration">
+      
+      <!-- Sequence 1 -->
+      <div class="flex items-center gap-12 md:gap-24 pr-12 md:pr-24">
+        @for (supplier of baseSequence; track $index) {
+          <div class="flex-shrink-0 flex items-center justify-center w-28 h-12 md:w-40 md:h-20 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <img [src]="supplier.logo" [alt]="supplier.name" class="w-full h-full object-contain max-w-full max-h-full" loading="lazy">
+          </div>
+        }
+      </div>
+
+      <!-- Sequence 2 -->
+      <div class="flex items-center gap-12 md:gap-24 pr-12 md:pr-24">
+        @for (supplier of baseSequence; track $index) {
+          <div class="flex-shrink-0 flex items-center justify-center w-28 h-12 md:w-40 md:h-20 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+            <img [src]="supplier.logo" [alt]="supplier.name" class="w-full h-full object-contain max-w-full max-h-full" loading="lazy">
+          </div>
+        }
+      </div>
+
+    </div>
+  </div>
+</section>
