@@ -1,13 +1,13 @@
 export const siteData = {
   companyName: 'Aussie Premium Solar',
-  tagline: 'Premium Solar & Battery Solutions For WA',
-  description: 'Australian Premium Solar is a proudly WA-based company delivering premium solar and battery installations with experienced in-house installers and trusted local workmanship.',
-  whatsappLink: 'https://wa.me/919876543210',
+  tagline: 'Premium Solar & Battery Solutions',
+  description: 'Aussie Premium Solar is a proudly Australian company delivering premium solar and battery installations with experienced in-house installers and trusted local workmanship.',
+  whatsappLink: 'https://wa.me/+61480033012',
   contact: {
-    phone: '0485 902 696',
-    email: 'info@Aussiesolar.com',
-    address: 'Western Australia, Australia',
-    partner: 'Wise Solar Electrical – WA',
+    phone: '1300 001 708',
+    email: 'info@aussiepremiumsolar.com.au',
+    address: 'Level 14, 3 parramatta square, parramatta NSW 2150, Australia',
+    partner: 'Wise Solar Electrical',
     // EmailJS Configuration
     // Go to https://www.emailjs.com/ to create an account and get these keys
     emailJS: {
@@ -19,7 +19,7 @@ export const siteData = {
   services: [
     {
       title: 'Residential Solar',
-      description: 'Premium rooftop solar systems designed for WA homes using high-quality panels, inverters, and expert local installation.',
+      description: 'Premium rooftop solar systems designed for homes using high-quality panels, inverters, and expert local installation.',
       iconText: 'solar_power'
     },
     {
@@ -34,12 +34,12 @@ export const siteData = {
     },
     {
       title: 'CEC Certified Installations',
-      description: 'All installations are completed by experienced local WA installers and CEC-certified professionals.',
+      description: 'All installations are completed by experienced installers and CEC-certified professionals.',
       iconText: 'verified'
     }
   ],
   whyChoose: [
-    '100% WA-based local company',
+    '100% Australian local company',
     'In-house installation team',
     'Industry experience since 2000',
     'Premium quality workmanship',
@@ -57,7 +57,7 @@ export const siteData = {
     {
       name: 'Sarah M.',
       text: 'Highly professional team. The installation was quick, clean, and the system works perfectly.',
-      role: 'Business Owner, WA'
+      role: 'Business Owner, Australia'
     },
     {
       name: 'David L.',
@@ -76,18 +76,18 @@ export const siteData = {
     'https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   ],
   stats: [
-    { value: '25+', label: 'Years Experience' },
-    { value: '100%', label: 'WA Local' },
+    { value: '10+', label: 'Years Experience' },
+    { value: '100%', label: 'Australian Local' },
     { value: 'CEC', label: 'Certified' },
     { value: 'Premium', label: 'Quality' }
   ],
   blogs: [
     {
       title: 'Top 5 Benefits of Solar Panels in Western Australia',
-      slug: 'top-5-benefits-of-solar-panels-in-wa',
-      summary: 'Discover the incredible advantages of installing solar panels in WA, from drastically reducing your energy bills to increasing your home\'s value.',
+      slug: 'top-5-benefits-of-solar-panels-in',
+      summary: 'Discover the incredible advantages of installing solar panels, from drastically reducing your energy bills to increasing your home\'s value.',
       content: `
-        <p class="mb-4">Western Australia is known for its abundant sunshine, making it one of the best places in the world to invest in solar energy. If you're considering making the switch, here are the top 5 benefits of installing solar panels in WA.</p>
+        <p class="mb-4">Western Australia is known for its abundant sunshine, making it one of the best places in the world to invest in solar energy. If you're considering making the switch, here are the top 5 benefits of installing solar panels.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">1. Massive Reductions in Energy Bills</h2>
         <p class="mb-4">With electricity prices consistently on the rise, generating your own power is the most effective way to shield yourself from utility rate hikes. Most households see a dramatic drop in their energy costs from day one.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">2. Government Rebates and Incentives</h2>
@@ -95,25 +95,25 @@ export const siteData = {
         <h2 class="text-2xl font-semibold mt-6 mb-3">3. Increased Property Value</h2>
         <p class="mb-4">Homes equipped with solar energy systems are highly attractive to buyers. A premium solar installation can increase your property's value, offering a great return on investment even if you decide to sell.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">4. Environmental Impact</h2>
-        <p class="mb-4">By switching to renewable energy, you significantly reduce your carbon footprint. Solar power produces zero emissions, helping to keep WA clean and green for future generations.</p>
+        <p class="mb-4">By switching to renewable energy, you significantly reduce your carbon footprint. Solar power produces zero emissions, helping to keep clean and green for future generations.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">5. Energy Independence</h2>
         <p class="mb-4">Pairing your solar panels with a battery storage system gives you ultimate control over your energy usage, reducing your reliance on the grid and protecting you from blackouts.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1733306416524-051af34aa7bd?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       date: '2026-06-15',
       author: 'Aussie Premium Solar',
-      keywords: 'benefits of solar panels WA, solar savings Perth, solar incentives Western Australia',
+      keywords: 'benefits of solar panels, solar savings Perth, solar incentives Western Australia',
       description: 'Discover the top 5 benefits of installing solar panels in Western Australia, including lower energy bills and increased home value.'
     },
     {
       title: 'How Solar Batteries Work and Why You Need One',
       slug: 'how-solar-batteries-work-and-why-you-need-one',
-      summary: 'A comprehensive guide to understanding solar battery storage systems and why they are essential for modern homes in Perth.',
+      summary: 'A comprehensive guide to understanding solar battery storage systems and why they are essential for modern homes.',
       content: `
         <p class="mb-4">Solar panels are fantastic at generating power during the day, but what happens when the sun goes down? This is where solar batteries come in.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Understanding Solar Batteries</h2>
         <p class="mb-4">A solar battery stores the excess electricity generated by your solar panels during peak daylight hours. Instead of sending this surplus energy back to the grid for a minimal feed-in tariff, you store it for your own use.</p>
-        <h2 class="text-2xl font-semibold mt-6 mb-3">Why You Need a Battery in WA</h2>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Why You Need a Battery</h2>
         <ul class="list-disc pl-6 mb-4">
           <li class="mb-2"><strong>Use Solar Power at Night:</strong> Power your home through the evening and night using the free energy you captured during the day.</li>
           <li class="mb-2"><strong>Blackout Protection:</strong> Many modern battery systems offer backup capabilities, keeping your essential appliances running during grid outages.</li>
@@ -124,26 +124,26 @@ export const siteData = {
       image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
       date: '2026-06-10',
       author: 'Aussie Premium Solar',
-      keywords: 'solar batteries Perth, how solar batteries work, solar energy storage WA',
-      description: 'Learn how solar batteries work and discover why adding battery storage to your solar system in WA is a smart investment.'
+      keywords: 'solar batteries Perth, how solar batteries work, solar energy storage',
+      description: 'Learn how solar batteries work and discover why adding battery storage to your solar system in is a smart investment.'
     },
     {
-      title: 'Government Solar Rebates in Western Australia 2026',
-      slug: 'government-solar-rebates-wa-2026',
-      summary: 'Everything you need to know about current government solar rebates and incentives available for WA residents in 2026.',
+      title: 'Government Solar Rebates in Australia 2026',
+      slug: 'government-solar-rebates-2026',
+      summary: 'Everything you need to know about current government solar rebates and incentives available for residents in 2026.',
       content: `
-        <p class="mb-4">Understanding government incentives can make your transition to solar energy much more affordable. Here is a breakdown of what’s available in WA for 2026.</p>
+        <p class="mb-4">Understanding government incentives can make your transition to solar energy much more affordable. Here is a breakdown of what’s available in for 2026.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Small-scale Technology Certificates (STCs)</h2>
         <p class="mb-4">The federal STC scheme is still the primary mechanism for reducing the upfront cost of solar installations. When you install an eligible system, it creates STCs, which are typically applied as an upfront discount by your installer. While the scheme phases out slowly each year until 2030, the savings in 2026 remain substantial.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Distributed Energy Buyback Scheme (DEBS)</h2>
-        <p class="mb-4">In WA, DEBS pays eligible customers for the excess electricity they export to the grid. It offers different rates depending on the time of day, encouraging battery storage and self-consumption during the evening peak.</p>
+        <p class="mb-4">In Australia, DEBS pays eligible customers for the excess electricity they export to the grid. It offers different rates depending on the time of day, encouraging battery storage and self-consumption during the evening peak.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">How to Claim</h2>
         <p class="mb-4">The best part about these incentives is that reputable, CEC-certified installers like Aussie Premium Solar handle the paperwork for you, applying the STC discount directly to your quote.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1678743133495-49199baeb582?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       date: '2026-06-05',
       author: 'Aussie Premium Solar',
-      keywords: 'solar rebates WA 2026, government solar incentives Perth, STC discount Western Australia',
+      keywords: 'solar rebates 2026, government solar incentives Perth, STC discount Western Australia',
       description: 'Get the latest information on government solar rebates and incentives in Western Australia for 2026, including STCs and DEBS.'
     },
     {
@@ -162,13 +162,13 @@ export const siteData = {
       image: 'https://plus.unsplash.com/premium_photo-1682144291286-49f5dd16965e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       date: '2026-05-28',
       author: 'Aussie Premium Solar',
-      keywords: 'residential vs commercial solar, commercial solar Perth, business solar WA',
+      keywords: 'residential vs commercial solar, commercial solar Perth, business solar',
       description: 'Learn the key differences between residential and commercial solar systems, including size, complexity, and return on investment.'
     },
     {
       title: 'Maximizing Your Solar Energy Savings During Summer',
       slug: 'maximizing-solar-energy-savings-summer',
-      summary: 'Practical tips and strategies to get the absolute most out of your solar panel system during the scorching WA summers.',
+      summary: 'Practical tips and strategies to get the absolute most out of your solar panel system during the scorching summers.',
       content: `
         <p class="mb-4">Summer in Western Australia means two things: air conditioning and abundant sunshine. Here is how you can use the latter to pay for the former.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Shift Your Energy Usage</h2>
@@ -181,7 +181,7 @@ export const siteData = {
       image: 'https://plus.unsplash.com/premium_photo-1714945021967-1071a42ea817?q=80&w=1157&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       date: '2026-05-20',
       author: 'Aussie Premium Solar',
-      keywords: 'maximize solar savings, solar tips summer, reducing energy bills WA',
+      keywords: 'maximize solar savings, solar tips summer, reducing energy bills',
       description: 'Discover practical tips for maximizing your solar energy savings and efficiently running your AC during the hot Western Australian summer.'
     },
     {
@@ -204,7 +204,7 @@ export const siteData = {
       image: 'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       date: '2026-05-12',
       author: 'Aussie Premium Solar',
-      keywords: 'solar panel cost Perth, solar installation prices WA, cheap solar warning',
+      keywords: 'solar panel cost Perth, solar installation prices Australia, cheap solar warning',
       description: 'Get a transparent breakdown of the true cost of installing solar panels in Perth, including factors that affect pricing and why to avoid cheap solar.'
     },
     {
@@ -217,23 +217,23 @@ export const siteData = {
         <p class="mb-4">Solar panels generate electricity from daylight, not just direct sunlight. While direct, intense sun produces maximum output, panels still capture diffuse light that penetrates through clouds.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Expected Efficiency Drop</h2>
         <p class="mb-4">On a heavily overcast day, a system might produce between 10% to 25% of its typical capacity. While this is a drop, modern premium panels are incredibly efficient in low-light conditions.</p>
-        <h2 class="text-2xl font-semibold mt-6 mb-3">Why WA is Perfect Regardless</h2>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Why Australia is Perfect Regardless</h2>
         <p class="mb-4">Perth is one of the sunniest cities in the world, averaging around 147 clear days a year. The massive over-production during clear days more than makes up for the occasional cloudy spell, especially if you utilize battery storage.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1663091717228-8e1b29d13459?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       date: '2026-05-02',
       author: 'Aussie Premium Solar',
-      keywords: 'solar panels cloudy days, solar efficiency weather, solar panels winter WA',
+      keywords: 'solar panels cloudy days, solar efficiency weather, solar panels winter Australia',
       description: 'Find out the truth about how solar panels perform on cloudy days and why Western Australia is an ideal location for solar energy regardless of the weather.'
     },
     {
-      title: 'Why You Should Choose a Local WA Solar Installer',
-      slug: 'why-choose-local-wa-solar-installer',
+      title: 'Why You Should Choose a Local Australian Solar Installer',
+      slug: 'why-choose-local-solar-installer',
       summary: 'The critical reasons why working with a local Western Australian solar company is better than going with a national retailer.',
       content: `
         <p class="mb-4">When buying a solar system, who installs it is just as important as what is installed. Here is why local is always better.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Local Knowledge</h2>
-        <p class="mb-4">A local WA company understands the specific requirements of Western Power, the regional weather patterns, and the best mounting solutions for WA roofing types.</p>
+        <p class="mb-4">A local Australia company understands the specific requirements of Western Power, the regional weather patterns, and the best mounting solutions for roofing types.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">In-House Installers vs. Subcontractors</h2>
         <p class="mb-4">National retailers often sell you a system and subcontract the work to the lowest bidder. Local companies like Aussie Premium Solar use their own trusted, in-house installers, ensuring strict quality control and accountability.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Reliable After-Sales Support</h2>
@@ -242,8 +242,8 @@ export const siteData = {
       image: 'https://plus.unsplash.com/premium_photo-1682148196781-8bbcdfd7f537?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       date: '2026-04-25',
       author: 'Aussie Premium Solar',
-      keywords: 'local solar installer Perth, WA solar company, Aussie Premium Solar installers',
-      description: 'Discover the advantages of choosing a local WA solar installer over national retailers, from in-house expertise to superior after-sales support.'
+      keywords: 'local solar installer Perth, solar company, Aussie Premium Solar installers',
+      description: 'Discover the advantages of choosing a local Australian solar installer over national retailers, from in-house expertise to superior after-sales support.'
     },
     {
       title: 'Off-Grid vs. Grid-Tied Solar Systems Explained',
@@ -254,15 +254,15 @@ export const siteData = {
         <h2 class="text-2xl font-semibold mt-6 mb-3">Grid-Tied Systems</h2>
         <p class="mb-4">This is the most common residential setup. Your system is connected to the municipal power grid. When you produce excess energy, it goes to the grid. When you need more energy than you produce (at night), you draw from the grid.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Off-Grid Systems</h2>
-        <p class="mb-4">Off-grid systems are entirely independent of the utility company. They require large battery banks and often backup generators to ensure power is available 24/7. These are essential for remote WA properties but are usually too expensive and unnecessary for urban homes.</p>
+        <p class="mb-4">Off-grid systems are entirely independent of the utility company. They require large battery banks and often backup generators to ensure power is available 24/7. These are essential for remote properties but are usually too expensive and unnecessary for urban homes.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Hybrid Systems (Grid-Tied with Battery)</h2>
         <p class="mb-4">The best of both worlds. You remain connected to the grid but have a battery to store excess solar for nighttime use or during blackouts. This offers energy security and maximum savings.</p>
       `,
       image: 'https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       date: '2026-04-18',
       author: 'Aussie Premium Solar',
-      keywords: 'off grid solar WA, grid tied solar Perth, hybrid solar systems',
-      description: 'Learn the differences between off-grid, grid-tied, and hybrid solar systems to determine which setup is right for your WA property.'
+      keywords: 'off grid solar Australia, grid tied solar Perth, hybrid solar systems',
+      description: 'Learn the differences between off-grid, grid-tied, and hybrid solar systems to determine which setup is right for your property.'
     },
     {
       title: 'Cleaning and Maintaining Your Solar Panels for Peak Performance',
@@ -271,7 +271,7 @@ export const siteData = {
       content: `
         <p class="mb-4">Solar systems are incredibly low maintenance, as they have no moving parts. However, a little care goes a long way in preserving their efficiency.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Do You Need to Clean Them?</h2>
-        <p class="mb-4">Generally, rainwater does a decent job of washing away light dust. However, in WA’s dry summers, or if you live near busy roads or areas with heavy bird populations, grime can accumulate.</p>
+        <p class="mb-4">Generally, rainwater does a decent job of washing away light dust. However, in dry summers, or if you live near busy roads or areas with heavy bird populations, grime can accumulate.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">How to Clean Your Panels</h2>
         <p class="mb-4">If you choose to clean them yourself, do so safely from the ground using a hose. Avoid abrasive sponges, harsh chemicals, or pressure washers, which can scratch the glass and void your warranty. When in doubt, hire a professional solar cleaner.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Annual Health Checks</h2>
@@ -280,7 +280,7 @@ export const siteData = {
       image: 'https://plus.unsplash.com/premium_photo-1682148026899-d21f17c04e80?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       date: '2026-04-10',
       author: 'Aussie Premium Solar',
-      keywords: 'solar panel cleaning Perth, solar maintenance WA, solar panel efficiency',
+      keywords: 'solar panel cleaning Perth, solar maintenance, solar panel efficiency',
       description: 'Read our simple guide on how to clean and maintain your solar panels to ensure they operate at peak performance year-round.'
     }
   ]
