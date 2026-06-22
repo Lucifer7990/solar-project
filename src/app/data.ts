@@ -283,5 +283,58 @@ export const siteData = {
       keywords: 'solar panel cleaning Perth, solar maintenance, solar panel efficiency',
       description: 'Read our simple guide on how to clean and maintain your solar panels to ensure they operate at peak performance year-round.'
     }
+  ],
+  products: [
+    {
+      title: 'Premium Solar Panel 400W',
+      slug: 'premium-solar-panel-400w',
+      // summary: 'High-efficiency monocrystalline solar panels built for the harsh Australian climate, offering superior durability and performance.',
+      content: `
+        <p class="mb-4">Upgrade your home with our Premium Solar Panel 400W. Designed specifically for high efficiency in both direct and low light conditions.</p>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li class="mb-2"><strong>High Efficiency:</strong> Up to 22% conversion rate ensures maximum power generation even on cloudy days.</li>
+          <li class="mb-2"><strong>Durability:</strong> Built to withstand severe weather, including heavy rain and strong winds.</li>
+          <li class="mb-2"><strong>25-Year Warranty:</strong> Enjoy peace of mind with our industry-leading performance warranty.</li>
+        </ul>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Specifications</h2>
+        <p class="mb-4">Power Output: 400W<br>Cell Type: Monocrystalline<br>Dimensions: 1722 x 1134 x 30 mm</p>
+      `,
+      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop'
+    },
+    {
+      title: 'Smart Solar Inverter 5kW',
+      slug: 'smart-solar-inverter-5kw',
+      //summary: 'Advanced string inverter with built-in Wi-Fi monitoring and smart grid capabilities to maximize your energy usage.',
+      content: `
+        <p class="mb-4">The Smart Solar Inverter 5kW is the brain of your solar system, converting DC power to usable AC power with incredible efficiency.</p>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li class="mb-2"><strong>Smart Monitoring:</strong> Track your energy production and consumption in real-time via our mobile app.</li>
+          <li class="mb-2"><strong>High Efficiency:</strong> 98.4% maximum efficiency for maximum energy yield.</li>
+          <li class="mb-2"><strong>Quiet Operation:</strong> Fanless design ensures silent operation inside or outside your home.</li>
+        </ul>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Specifications</h2>
+        <p class="mb-4">Max Output: 5000W<br>Phase: Single Phase<br>Warranty: 10 Years</p>
+      `,
+      image: 'https://plus.unsplash.com/premium_photo-1678743133495-49199baeb582?q=80&w=1171&auto=format&fit=crop'
+    },
+    {
+      title: 'Home Battery Storage 10kWh',
+      slug: 'home-battery-storage-10kwh',
+      // summary: 'Store your excess solar energy for nighttime use and protect your home against grid blackouts with our premium battery.',
+      content: `
+        <p class="mb-4">Achieve true energy independence with our Home Battery Storage 10kWh. Store excess energy generated during the day and use it when you need it most.</p>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li class="mb-2"><strong>Blackout Protection:</strong> Automatically powers essential appliances during grid outages.</li>
+          <li class="mb-2"><strong>High Capacity:</strong> 10kWh usable energy, enough to power most homes through the night.</li>
+          <li class="mb-2"><strong>Compact Design:</strong> Sleek, wall-mounted unit that saves space in your garage.</li>
+        </ul>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Specifications</h2>
+        <p class="mb-4">Usable Capacity: 10kWh<br>Chemistry: Lithium Iron Phosphate (LiFePO4)<br>Warranty: 10 Years</p>
+      `,
+      image: 'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=1331&auto=format&fit=crop'
+    }
   ]
 };

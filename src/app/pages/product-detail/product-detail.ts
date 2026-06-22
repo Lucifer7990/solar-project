@@ -6,42 +6,42 @@ import { SeoService } from '../../services/seo.service';
 import { ContentDetailComponent } from '../../components/content-detail/content-detail';
 
 @Component({
-  selector: 'app-blog-detail',
+  selector: 'app-product-detail',
   standalone: true,
   imports: [CommonModule, RouterModule, ContentDetailComponent],
-  templateUrl: './blog-detail.html',
+  templateUrl: './product-detail.html',
 })
-export class BlogDetailComponent implements OnInit, OnChanges {
+export class ProductDetailComponent implements OnInit, OnChanges {
   @Input() slug?: string;
   dataService = inject(DataService);
   seoService = inject(SeoService);
   router = inject(Router);
   
-  blog: any;
+  product: any;
 
   ngOnInit() {
-    this.loadBlog();
+    this.loadProduct();
   }
 
   ngOnChanges() {
-    this.loadBlog();
+    this.loadProduct();
   }
 
-  loadBlog() {
+  loadProduct() {
     if (!this.slug) return;
     
-    const blogs = this.dataService.siteData().blogs || [];
-    this.blog = blogs.find(b => b.slug === this.slug);
+    const products = this.dataService.siteData().products || [];
+    this.product = products.find(p => p.slug === this.slug);
 
-    if (this.blog) {
+    if (this.product) {
       this.seoService.setSeoData(
-        `${this.blog.title} | Aussie Premium Solar`,
-        this.blog.description || this.blog.summary,
-        this.blog.keywords || 'solar energy, western australia',
-        this.blog.image
+        `${this.product.title} | Aussie Premium Solar`,
+        this.product.summary,
+        'solar energy, products, western australia',
+        this.product.image
       );
     } else {
-      this.router.navigate(['/blog']);
+      this.router.navigate(['/products']);
     }
   }
 }

@@ -1,0 +1,54 @@
+<div class="py-16 bg-slate-50 min-h-screen">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h1 class="text-4xl font-bold text-slate-800 mb-4">{{ pageTitle }}</h1>
+      <p class="text-lg text-slate-600">{{ pageSubtitle }}</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (item of items; track item.slug) {
+      <article
+        class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col group cursor-pointer"
+        [routerLink]="[basePath, item.slug]">
+        <div class="relative h-64 overflow-hidden">
+          <img [src]="item.image" [alt]="item.title" loading="lazy"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          @if (item.date) {
+          <div
+            class="absolute top-4 right-4 bg-white/90 backdrop-blur text-yellow-600 text-sm font-semibold px-3 py-1 rounded-full">
+            {{ item.date | date:'MMM dd, yyyy' }}
+          </div>
+          }
+        </div>
+        <div class="p-6 flex-grow flex flex-col">
+          <h2
+            class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-yellow-600 transition-colors duration-200 line-clamp-2">
+            {{ item.title }}
+          </h2>
+          @if (item.summary){
+            <p class="text-slate-600 mb-6 flex-grow line-clamp-3">
+              {{ item.summary }}
+            </p>
+          }
+
+          <div class="mt-auto flex items-center justify-between">
+            @if (item.author) {
+            <span class="text-sm font-medium text-slate-500 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[18px]">person</span>
+              {{ item.author }}
+            </span>
+            } @else {
+            <span></span>
+            }
+            <span
+              class="text-yellow-600 font-semibold group-hover:translate-x-1 transition-transform duration-200 flex items-center">
+              View Details
+              <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+            </span>
+          </div>
+        </div>
+      </article>
+      }
+    </div>
+  </div>
+</div>
