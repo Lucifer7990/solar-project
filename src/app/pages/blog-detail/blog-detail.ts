@@ -37,7 +37,7 @@ export class BlogDetailComponent implements OnInit, OnChanges {
       this.seoService.setSeoData(
         `${this.blog.title} | Aussie Premium Solar`,
         this.blog.description || this.blog.summary,
-        this.blog.keywords || 'solar energy, western australia',
+        this.blog.keywords || 'solar energy, australia',
         this.blog.image
       );
     } else {

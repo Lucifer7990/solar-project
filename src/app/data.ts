@@ -6,7 +6,7 @@ export const siteData = {
   contact: {
     phone: '1300 001 708',
     email: 'info@aussiepremiumsolar.com.au',
-    address: 'Level 14, 3 parramatta square, parramatta NSW 2150, Australia',
+    address: 'Level 14/3 Parramatta Square, 153 Macquarie St, Parramatta NSW 2150, Australia',
     partner: 'Wise Solar Electrical',
     // EmailJS Configuration
     // Go to https://www.emailjs.com/ to create an account and get these keys
@@ -49,9 +49,8 @@ export const siteData = {
   ],
   whyChoose: [
     '100% Australian local company',
-    'In-house installation team',
-    'Industry experience since 2000',
-    'Premium quality workmanship',
+    'Industry experience since 2016',
+    'Premium quality workmanship (10 years)',
     'CEC Certified installers only',
     'Solar & battery specialists',
     'Residential & commercial systems',
@@ -92,11 +91,11 @@ export const siteData = {
   ],
   blogs: [
     {
-      title: 'Top 5 Benefits of Solar Panels in Western Australia',
+      title: 'Top 5 Benefits of Solar Panels in Australia',
       slug: 'top-5-benefits-of-solar-panels-in',
       summary: 'Discover the incredible advantages of installing solar panels, from drastically reducing your energy bills to increasing your home\'s value.',
       content: `
-        <p class="mb-4">Western Australia is known for its abundant sunshine, making it one of the best places in the world to invest in solar energy. If you're considering making the switch, here are the top 5 benefits of installing solar panels.</p>
+        <p class="mb-4">Australia is known for its abundant sunshine, making it one of the best places in the world to invest in solar energy. If you're considering making the switch, here are the top 5 benefits of installing solar panels.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">1. Massive Reductions in Energy Bills</h2>
         <p class="mb-4">With electricity prices consistently on the rise, generating your own power is the most effective way to shield yourself from utility rate hikes. Most households see a dramatic drop in their energy costs from day one.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">2. Government Rebates and Incentives</h2>
@@ -109,10 +108,9 @@ export const siteData = {
         <p class="mb-4">Pairing your solar panels with a battery storage system gives you ultimate control over your energy usage, reducing your reliance on the grid and protecting you from blackouts.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1733306416524-051af34aa7bd?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      date: '2026-06-15',
       author: 'Aussie Premium Solar',
-      keywords: 'benefits of solar panels, solar savings Perth, solar incentives Western Australia',
-      description: 'Discover the top 5 benefits of installing solar panels in Western Australia, including lower energy bills and increased home value.'
+      keywords: 'benefits of solar panels, solar savings Perth, solar incentives Australia',
+      description: 'Discover the top 5 benefits of installing solar panels in Australia, including lower energy bills and increased home value.'
     },
     {
       title: 'How Solar Batteries Work and Why You Need One',
@@ -131,7 +129,6 @@ export const siteData = {
         <p class="mb-4">Investing in a battery storage solution from Aussie Premium Solar ensures you get the most out of every ray of sunshine.</p>
       `,
       image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
-      date: '2026-06-10',
       author: 'Aussie Premium Solar',
       keywords: 'solar batteries Perth, how solar batteries work, solar energy storage',
       description: 'Learn how solar batteries work and discover why adding battery storage to your solar system in is a smart investment.'
@@ -150,10 +147,9 @@ export const siteData = {
         <p class="mb-4">The best part about these incentives is that reputable, CEC-certified installers like Aussie Premium Solar handle the paperwork for you, applying the STC discount directly to your quote.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1678743133495-49199baeb582?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      date: '2026-06-05',
       author: 'Aussie Premium Solar',
-      keywords: 'solar rebates 2026, government solar incentives Perth, STC discount Western Australia',
-      description: 'Get the latest information on government solar rebates and incentives in Western Australia for 2026, including STCs and DEBS.'
+      keywords: 'solar rebates 2026, government solar incentives Perth, STC discount Australia',
+      description: 'Get the latest information on government solar rebates and incentives in Australia for 2026, including STCs and DEBS.'
     },
     {
       title: 'Residential vs. Commercial Solar: What\'s the Difference?',
@@ -169,7 +165,6 @@ export const siteData = {
         <p class="mb-4">Commercial installations offer incredible ROI, often paying for themselves in 3-5 years due to high daylight consumption and tax benefits like instant asset write-offs (depending on current legislation). Residential ROI is also strong but typically closer to 4-7 years.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1682144291286-49f5dd16965e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      date: '2026-05-28',
       author: 'Aussie Premium Solar',
       keywords: 'residential vs commercial solar, commercial solar Perth, business solar',
       description: 'Learn the key differences between residential and commercial solar systems, including size, complexity, and return on investment.'
@@ -179,7 +174,7 @@ export const siteData = {
       slug: 'maximizing-solar-energy-savings-summer',
       summary: 'Practical tips and strategies to get the absolute most out of your solar panel system during the scorching summers.',
       content: `
-        <p class="mb-4">Summer in Western Australia means two things: air conditioning and abundant sunshine. Here is how you can use the latter to pay for the former.</p>
+        <p class="mb-4">Summer in Australia means two things: air conditioning and abundant sunshine. Here is how you can use the latter to pay for the former.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Shift Your Energy Usage</h2>
         <p class="mb-4">Run heavy appliances—like your washing machine, dishwasher, and pool pump—during the middle of the day when your solar panels are producing peak power. Use timers if you are not home.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Pre-cool Your Home</h2>
@@ -188,10 +183,9 @@ export const siteData = {
         <p class="mb-4">Dust and debris can accumulate during dry summer months, reducing panel efficiency. A quick professional clean can boost output by up to 15%.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1714945021967-1071a42ea817?q=80&w=1157&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      date: '2026-05-20',
       author: 'Aussie Premium Solar',
       keywords: 'maximize solar savings, solar tips summer, reducing energy bills',
-      description: 'Discover practical tips for maximizing your solar energy savings and efficiently running your AC during the hot Western Australian summer.'
+      description: 'Discover practical tips for maximizing your solar energy savings and efficiently running your AC during the hot Australian summer.'
     },
     {
       title: 'The True Cost of Installing Solar Panels in Perth',
@@ -211,7 +205,6 @@ export const siteData = {
         <p class="mb-4">Systems advertised well below market average often cut corners on safety components, use low-quality panels that fail within a few years, or provide zero after-sales support.</p>
       `,
       image: 'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      date: '2026-05-12',
       author: 'Aussie Premium Solar',
       keywords: 'solar panel cost Perth, solar installation prices Australia, cheap solar warning',
       description: 'Get a transparent breakdown of the true cost of installing solar panels in Perth, including factors that affect pricing and why to avoid cheap solar.'
@@ -230,26 +223,24 @@ export const siteData = {
         <p class="mb-4">Perth is one of the sunniest cities in the world, averaging around 147 clear days a year. The massive over-production during clear days more than makes up for the occasional cloudy spell, especially if you utilize battery storage.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1663091717228-8e1b29d13459?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      date: '2026-05-02',
       author: 'Aussie Premium Solar',
       keywords: 'solar panels cloudy days, solar efficiency weather, solar panels winter Australia',
-      description: 'Find out the truth about how solar panels perform on cloudy days and why Western Australia is an ideal location for solar energy regardless of the weather.'
+      description: 'Find out the truth about how solar panels perform on cloudy days and why Australia is an ideal location for solar energy regardless of the weather.'
     },
     {
       title: 'Why You Should Choose a Local Australian Solar Installer',
       slug: 'why-choose-local-solar-installer',
-      summary: 'The critical reasons why working with a local Western Australian solar company is better than going with a national retailer.',
+      summary: 'The critical reasons why working with a local Australian solar company is better than going with a national retailer.',
       content: `
         <p class="mb-4">When buying a solar system, who installs it is just as important as what is installed. Here is why local is always better.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Local Knowledge</h2>
-        <p class="mb-4">A local Australia company understands the specific requirements of Western Power, the regional weather patterns, and the best mounting solutions for roofing types.</p>
+        <p class="mb-4">A local Australia company understands the specific requirements of Power, the regional weather patterns, and the best mounting solutions for roofing types.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">In-House Installers vs. Subcontractors</h2>
         <p class="mb-4">National retailers often sell you a system and subcontract the work to the lowest bidder. Local companies like Aussie Premium Solar use their own trusted, in-house installers, ensuring strict quality control and accountability.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Reliable After-Sales Support</h2>
         <p class="mb-4">If an issue arises, you want a local team who can be on-site quickly to resolve it, rather than dealing with an interstate call center that puts you on hold.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1682148196781-8bbcdfd7f537?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      date: '2026-04-25',
       author: 'Aussie Premium Solar',
       keywords: 'local solar installer Perth, solar company, Aussie Premium Solar installers',
       description: 'Discover the advantages of choosing a local Australian solar installer over national retailers, from in-house expertise to superior after-sales support.'
@@ -268,7 +259,6 @@ export const siteData = {
         <p class="mb-4">The best of both worlds. You remain connected to the grid but have a battery to store excess solar for nighttime use or during blackouts. This offers energy security and maximum savings.</p>
       `,
       image: 'https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      date: '2026-04-18',
       author: 'Aussie Premium Solar',
       keywords: 'off grid solar Australia, grid tied solar Perth, hybrid solar systems',
       description: 'Learn the differences between off-grid, grid-tied, and hybrid solar systems to determine which setup is right for your property.'
@@ -287,7 +277,6 @@ export const siteData = {
         <p class="mb-4">Beyond cleaning, it is recommended to have a professional inspection every 1-2 years to check inverter performance, ensure wiring integrity, and inspect mounting hardware.</p>
       `,
       image: 'https://plus.unsplash.com/premium_photo-1682148026899-d21f17c04e80?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      date: '2026-04-10',
       author: 'Aussie Premium Solar',
       keywords: 'solar panel cleaning Perth, solar maintenance, solar panel efficiency',
       description: 'Read our simple guide on how to clean and maintain your solar panels to ensure they operate at peak performance year-round.'

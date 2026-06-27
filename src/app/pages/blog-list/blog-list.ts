@@ -19,7 +19,7 @@ export class BlogListComponent implements OnInit {
   ngOnInit() {
     this.seoService.setSeoData(
       'Solar Energy Blog & News | Aussie Premium Solar',
-      'Read the latest news, tips, and insights on solar panels, battery storage, and energy savings in Western Australia.',
+      'Read the latest news, tips, and insights on solar panels, battery storage, and energy savings in Australia.',
       'solar blog Australia, solar news Perth, solar panel tips, battery storage insights',
       'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop'
     );

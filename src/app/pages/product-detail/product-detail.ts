@@ -37,7 +37,7 @@ export class ProductDetailComponent implements OnInit, OnChanges {
       this.seoService.setSeoData(
         `${this.product.title} | Aussie Premium Solar`,
         this.product.summary,
-        'solar energy, products, western australia',
+        'solar energy, products, australia',
         this.product.image
       );
     } else {

@@ -1,4 +1,4 @@
-<section id="testimonials" class="py-24 bg-white">
+<section id="testimonials" class="pt-24 bg-white">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-16">
       <h3 class="text-3xl md:text-5xl font-extrabold text-slate-800 mb-6">What Our Clients Say</h3>
@@ -26,22 +26,6 @@
         </div>
       }
     </div>
-
-    <!-- Gallery grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      @for (img of gallery; track img) {
-        <div class="overflow-hidden rounded-2xl h-48 sm:h-64 group relative shadow-md">
-          <div
-            class="absolute inset-0 bg-eco-dark/20 group-hover:bg-transparent transition-colors z-10 duration-500"
-          ></div>
-          <img
-            loading="lazy"
-            [src]="img"
-            alt="Solar Installation"
-            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-          />
-        </div>
-      }
-    </div>
+    
   </div>
 </section>

@@ -19,7 +19,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
     this.seoService.setSeoData(
       'Solar Products & Solutions | Aussie Premium Solar',
-      'Explore our range of premium solar panels, smart inverters, and battery storage solutions in Western Australia.',
+      'Explore our range of premium solar panels, smart inverters, and battery storage solutions in Australia.',
       'solar products Australia, solar panels Perth, solar inverters, solar batteries',
       'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop'
     );
