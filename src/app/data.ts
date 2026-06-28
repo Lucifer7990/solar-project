@@ -42,19 +42,17 @@ export const siteData = {
       iconText: 'domain'
     },
     {
-      title: 'CEC Certified Installations',
+      title: 'CEC Certified',
       description: 'All installations are completed by experienced installers and CEC-certified professionals.',
       iconText: 'verified'
     }
   ],
   whyChoose: [
     '100% Australian local company',
-    'Industry experience since 2016',
-    'Premium quality workmanship (10 years)',
+    '10 Years Workmanship Warranty',
     'CEC Certified installers only',
     'Solar & battery specialists',
     'Residential & commercial systems',
-    'Trusted local installation partner'
   ],
   testimonials: [
     {
