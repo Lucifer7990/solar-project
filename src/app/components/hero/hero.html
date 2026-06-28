@@ -1,35 +1,66 @@
-<section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-eco-dark">
-  <!-- Background with overlay (we use a solid color/gradient since video/image might not load properly, or use an image from data) -->
-  <div class="absolute inset-0 bg-gradient-to-r from-eco-dark to-slate-900 opacity-90 z-10"></div>
-  <div class="absolute inset-0 z-0 bg-cover bg-center" [style.background-image]="'url(' + data.images.heroBg + ')'"></div>
+<section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">
+  <!-- Background with gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-800/80 to-eco-dark/90 z-10"></div>
+  <div class="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-1000 scale-105" [style.background-image]="'url(' + data.images.heroBg + ')'"></div>
 
-  <div class="relative z-30 max-w-5xl mx-auto px-6 pb-20 text-center text-white mt-24  sm:mt-16">
-    <div class="inline-block mb-6 px-4 py-2 rounded-full border border-eco-green text-eco-green text-sm font-bold tracking-wider uppercase bg-eco-dark bg-opacity-50">
-      Leading the Transition to Clean Energy
+  <div class="relative z-30 max-w-7xl mx-auto px-6 py-24 text-white mt-16 w-full grid lg:grid-cols-2 gap-12 items-center">
+    <!-- Left Column: Text -->
+    <div class="text-left">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6 tracking-tight text-white drop-shadow-md">
+        Empower Your Home With <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-eco-green to-emerald-300">High-Efficiency Solar</span>
+      </h2>
+
+      <p class="text-sm md:text-lg text-slate-200 leading-relaxed mb-10 max-w-2xl drop-shadow">
+        {{ data.description }}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a [href]="'tel:' + data.contact.phone" class="group flex items-center justify-center gap-2 w-full sm:w-auto bg-gradient-to-r from-eco-green to-emerald-500 hover:from-emerald-400 hover:to-emerald-500 text-white font-bold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-emerald-500/50 hover:-translate-y-1 text-lg">
+          <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">phone</span>
+          {{data.contact.phone}}
+        </a>
+
+        <a href="#contact" class="w-full sm:w-auto border-2 border-white/80 hover:bg-white hover:text-slate-900 px-8 py-4 rounded-full transition-all font-bold text-lg backdrop-blur-sm text-center">
+          Request Free Quote
+        </a>
+      </div>
     </div>
-
-    <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-      Power Your Future With <br>
-      <span class="text-eco-green">Clean Energy</span>
-    </h2>
-
-    <p class="max-w-3xl mx-auto text-lg md:text-2xl text-slate-300 leading-relaxed mb-10">
-      {{ data.description }}
-    </p>
-
-    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-      <a href="#calculator" class="w-full sm:w-auto bg-eco-green hover:bg-emerald-400 text-white font-bold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl text-lg">
-        Calculate Savings
-      </a>
-
-      <a href="#contact" class="w-full sm:w-auto border-2 border-white hover:bg-white hover:text-eco-dark px-8 py-4 rounded-full transition-all font-bold text-lg">
-        Request Free Quote
-      </a>
+    
+    <!-- Right Column: Specs Cards (Glassmorphism) -->
+    <div class="hidden md:grid grid-cols-2 gap-4 perspective-1000">
+      <!-- Card 1 -->
+      <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-2xl hover:bg-white/15 transition-all transform hover:-translate-y-2 group">
+        <div class="w-12 h-12 bg-eco-green/20 rounded-full flex items-center justify-center mb-4 text-eco-green group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-3xl">solar_power</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Tier 1 Panels</h3>
+        <p class="text-slate-300 text-sm">Ultra-high efficiency N-Type monocrystalline panels.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-2xl hover:bg-white/15 transition-all transform hover:-translate-y-2 translate-y-8 group">
+        <div class="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center mb-4 text-yellow-400 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-3xl">battery_charging_full</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Smart Battery</h3>
+        <p class="text-slate-300 text-sm">High-capacity storage with blackout protection.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-2xl hover:bg-white/15 transition-all transform hover:-translate-y-2 group">
+        <div class="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mb-4 text-blue-400 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-3xl">verified</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">25-Year Warranty</h3>
+        <p class="text-slate-300 text-sm">Industry-leading performance and product warranty.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-2xl hover:bg-white/15 transition-all transform hover:-translate-y-2 translate-y-8 group">
+        <div class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mb-4 text-purple-400 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-3xl">support_agent</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Local Support</h3>
+        <p class="text-slate-300 text-sm">100% Australian local installers and service team.</p>
+      </div>
     </div>
-  </div>
-  
-  <!-- Decorative Bottom Curve/Shape (pure css) -->
-  <div class="absolute bottom-0 w-full z-20 overflow-hidden" style="height: 50px;">
-    <div class="w-[150%] h-[200px] bg-slate-900 rounded-[50%] absolute bottom-[-150px] left-[-25%]"></div>
   </div>
 </section>
