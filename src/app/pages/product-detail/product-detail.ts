@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { DataService } from '../../services/data.service';
 import { SeoService } from '../../services/seo.service';
-import { ContentDetailComponent } from '../../components/content-detail/content-detail';
+import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [CommonModule, RouterModule, ContentDetailComponent],
+  imports: [CommonModule, RouterModule, ScrollRevealDirective],
   templateUrl: './product-detail.html',
 })
 export class ProductDetailComponent implements OnInit, OnChanges {
@@ -18,6 +18,7 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   router = inject(Router);
   
   product: any;
+  selectedImage: string = '';
 
   ngOnInit() {
     this.loadProduct();
@@ -34,6 +35,8 @@ export class ProductDetailComponent implements OnInit, OnChanges {
     this.product = products.find(p => p.slug === this.slug);
 
     if (this.product) {
+      this.selectedImage = this.product.images && this.product.images.length > 0 ? this.product.images[0] : this.product.image;
+
       this.seoService.setSeoData(
         `${this.product.title} | Aussie Premium Solar`,
         this.product.summary,
@@ -43,5 +46,23 @@ export class ProductDetailComponent implements OnInit, OnChanges {
     } else {
       this.router.navigate(['/products']);
     }
+  }
+
+  selectImage(img: string) {
+    this.selectedImage = img;
+  }
+
+  nextImage() {
+    if (!this.product || !this.product.images) return;
+    const currentIndex = this.product.images.indexOf(this.selectedImage);
+    const nextIndex = (currentIndex + 1) % this.product.images.length;
+    this.selectedImage = this.product.images[nextIndex];
+  }
+
+  prevImage() {
+    if (!this.product || !this.product.images) return;
+    const currentIndex = this.product.images.indexOf(this.selectedImage);
+    const prevIndex = (currentIndex - 1 + this.product.images.length) % this.product.images.length;
+    this.selectedImage = this.product.images[prevIndex];
   }
 }

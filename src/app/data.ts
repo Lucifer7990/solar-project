@@ -284,7 +284,7 @@ export const siteData = {
     {
       title: 'Premium Solar Panel 400W',
       slug: 'premium-solar-panel-400w',
-      // summary: 'High-efficiency monocrystalline solar panels built for the harsh Australian climate, offering superior durability and performance.',
+      summary: 'High-efficiency monocrystalline solar panels built for the harsh Australian climate, offering superior durability and performance.',
       content: `
         <p class="mb-4">Upgrade your home with our Premium Solar Panel 400W. Designed specifically for high efficiency in both direct and low light conditions.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
@@ -296,12 +296,17 @@ export const siteData = {
         <h2 class="text-2xl font-semibold mt-6 mb-3">Specifications</h2>
         <p class="mb-4">Power Output: 400W<br>Cell Type: Monocrystalline<br>Dimensions: 1722 x 1134 x 30 mm</p>
       `,
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
+      images: [
+        'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=800&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1592833159155-c62df1b65634?q=80&w=800&auto=format&fit=crop'
+      ]
     },
     {
       title: 'Smart Solar Inverter 5kW',
       slug: 'smart-solar-inverter-5kw',
-      //summary: 'Advanced string inverter with built-in Wi-Fi monitoring and smart grid capabilities to maximize your energy usage.',
+      summary: 'Advanced string inverter with built-in Wi-Fi monitoring and smart grid capabilities to maximize your energy usage.',
       content: `
         <p class="mb-4">The Smart Solar Inverter 5kW is the brain of your solar system, converting DC power to usable AC power with incredible efficiency.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
@@ -313,12 +318,17 @@ export const siteData = {
         <h2 class="text-2xl font-semibold mt-6 mb-3">Specifications</h2>
         <p class="mb-4">Max Output: 5000W<br>Phase: Single Phase<br>Warranty: 10 Years</p>
       `,
-      image: 'https://plus.unsplash.com/premium_photo-1678743133495-49199baeb582?q=80&w=1171&auto=format&fit=crop'
+      image: 'https://plus.unsplash.com/premium_photo-1678743133495-49199baeb582?q=80&w=1171&auto=format&fit=crop',
+      images: [
+        'https://plus.unsplash.com/premium_photo-1678743133495-49199baeb582?q=80&w=1171&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1508514177221-188b1c77eca2?q=80&w=1170&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1158&auto=format&fit=crop'
+      ]
     },
     {
       title: 'Home Battery Storage 10kWh',
       slug: 'home-battery-storage-10kwh',
-      // summary: 'Store your excess solar energy for nighttime use and protect your home against grid blackouts with our premium battery.',
+      summary: 'Store your excess solar energy for nighttime use and protect your home against grid blackouts with our premium battery.',
       content: `
         <p class="mb-4">Achieve true energy independence with our Home Battery Storage 10kWh. Store excess energy generated during the day and use it when you need it most.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
@@ -330,7 +340,12 @@ export const siteData = {
         <h2 class="text-2xl font-semibold mt-6 mb-3">Specifications</h2>
         <p class="mb-4">Usable Capacity: 10kWh<br>Chemistry: Lithium Iron Phosphate (LiFePO4)<br>Warranty: 10 Years</p>
       `,
-      image: 'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=1331&auto=format&fit=crop'
+      image: 'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=1331&auto=format&fit=crop',
+      images: [
+        'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=1331&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1620803569805-4c0471b0b754?q=80&w=1170&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1634563491741-692ab6449170?q=80&w=1170&auto=format&fit=crop'
+      ]
     }
   ]
 };

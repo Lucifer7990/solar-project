@@ -1,6 +1,37 @@
-<app-content-list
-  [items]="products"
-  basePath="/products"
-  pageTitle="Our Premium Products"
-  pageSubtitle="Discover high-efficiency solar panels, smart inverters, and reliable battery storage systems tailored for your energy needs.">
-</app-content-list>
+<div class="py-8 bg-slate-50 min-h-screen">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div appScrollReveal class="text-center max-w-3xl mx-auto mb-8">
+      <h1 class="text-4xl font-bold text-slate-800 mb-4">Our Premium Products</h1>
+      <p class="text-lg text-slate-600">Discover high-efficiency solar panels, smart inverters, and reliable battery storage systems tailored for your energy needs.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (product of products; track product.slug) {
+      <article appScrollReveal class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group border border-slate-100">
+        <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer" [routerLink]="['/products', product.slug]">
+          <img [src]="product.image" [alt]="product.title" loading="lazy" class="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-8 flex-grow flex flex-col">
+          <h2 class="text-2xl font-bold text-slate-800 mb-3 group-hover:text-yellow-600 transition-colors duration-200 cursor-pointer" [routerLink]="['/products', product.slug]">
+            {{ product.title }}
+          </h2>
+          @if (product.summary) {
+            <p class="text-slate-600 mb-8 flex-grow">
+              {{ product.summary }}
+            </p>
+          }
+          <div class="mt-auto flex flex-col gap-4">
+            <a [routerLink]="['/products', product.slug]" class="text-slate-800 font-semibold hover:text-yellow-600 flex items-center justify-between border-b border-slate-200 pb-4 transition-colors">
+              View Specifications
+              <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+            <a href="/#contact" class="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-bold rounded-xl text-slate-900 bg-yellow-400 hover:bg-yellow-500 shadow-sm hover:shadow-md transition-all duration-300">
+              Request Quote
+            </a>
+          </div>
+        </div>
+      </article>
+      }
+    </div>
+  </div>
+</div>

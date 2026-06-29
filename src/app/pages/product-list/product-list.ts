@@ -1,14 +1,14 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 import { DataService } from '../../services/data.service';
 import { SeoService } from '../../services/seo.service';
-import { ContentListComponent } from '../../components/content-list/content-list';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [CommonModule, RouterModule, ContentListComponent],
+  imports: [CommonModule, RouterModule, ScrollRevealDirective],
   templateUrl: './product-list.html',
 })
 export class ProductListComponent implements OnInit {
