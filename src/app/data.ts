@@ -282,19 +282,19 @@ export const siteData = {
   ],
   products: [
     {
-      title: 'Premium Solar Panel 400W',
-      slug: 'premium-solar-panel-400w',
-      summary: 'High-efficiency monocrystalline solar panels built for the harsh Australian climate, offering superior durability and performance.',
+      title: 'Risen 475W N-Type',
+      slug: 'risen-rsm96-11-475w',
+      summary: 'High-power 475W N-Type TOPCon bifacial module with up to 23.8% efficiency and premium double-glass design.',
       content: `
-        <p class="mb-4">Upgrade your home with our Premium Solar Panel 400W. Designed specifically for high efficiency in both direct and low light conditions.</p>
+        <p class="mb-4">The Risen RSM96-11 475W utilizes the latest N-Type TOPCon technology to deliver exceptional performance and reliability, ensuring maximum energy generation for your property.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
         <ul class="list-disc pl-6 mb-4">
-          <li class="mb-2"><strong>High Efficiency:</strong> Up to 22% conversion rate ensures maximum power generation even on cloudy days.</li>
-          <li class="mb-2"><strong>Durability:</strong> Built to withstand severe weather, including heavy rain and strong winds.</li>
-          <li class="mb-2"><strong>25-Year Warranty:</strong> Enjoy peace of mind with our industry-leading performance warranty.</li>
+          <li class="mb-2"><strong>475W High-Power Output:</strong> Industry-leading power generation for residential and commercial systems.</li>
+          <li class="mb-2"><strong>Latest N-Type TOPCon Technology:</strong> Advanced cell technology for superior efficiency and low-light performance.</li>
+          <li class="mb-2"><strong>Up to 23.8% Module Efficiency:</strong> Maximize your roof space with higher power density.</li>
+          <li class="mb-2"><strong>Premium Double-Glass Bifacial Design:</strong> Captures sunlight from both sides, increasing overall energy yield.</li>
+          <li class="mb-2"><strong>25-Year Product & 30-Year Performance Warranty:</strong> Long-term peace of mind and guaranteed reliability.</li>
         </ul>
-        <h2 class="text-2xl font-semibold mt-6 mb-3">Specifications</h2>
-        <p class="mb-4">Power Output: 400W<br>Cell Type: Monocrystalline<br>Dimensions: 1722 x 1134 x 30 mm</p>
       `,
       image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
       images: [
@@ -304,47 +304,85 @@ export const siteData = {
       ]
     },
     {
-      title: 'Smart Solar Inverter 5kW',
-      slug: 'smart-solar-inverter-5kw',
-      summary: 'Advanced string inverter with built-in Wi-Fi monitoring and smart grid capabilities to maximize your energy usage.',
+      title: 'JA Solar 475W',
+      slug: 'ja-solar-jam54d40-lr-475w',
+      summary: 'A robust 475W N-Type double glass module engineered specifically for tough Australian weather conditions.',
       content: `
-        <p class="mb-4">The Smart Solar Inverter 5kW is the brain of your solar system, converting DC power to usable AC power with incredible efficiency.</p>
+        <p class="mb-4">Equip your home with the JA Solar JAM54D40 LR 475W. Designed for durability and high efficiency, it stands up to the harshest Australian environments.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
         <ul class="list-disc pl-6 mb-4">
-          <li class="mb-2"><strong>Smart Monitoring:</strong> Track your energy production and consumption in real-time via our mobile app.</li>
-          <li class="mb-2"><strong>High Efficiency:</strong> 98.4% maximum efficiency for maximum energy yield.</li>
-          <li class="mb-2"><strong>Quiet Operation:</strong> Fanless design ensures silent operation inside or outside your home.</li>
+          <li class="mb-2"><strong>475W High-Efficiency Output:</strong> Uncompromising power delivery for faster return on investment.</li>
+          <li class="mb-2"><strong>Latest N-Type Double Glass Technology:</strong> Enhanced durability and resistance to micro-cracking and harsh weather.</li>
+          <li class="mb-2"><strong>Up to 23.8% Module Efficiency:</strong> High conversion rates for maximum daytime solar production.</li>
+          <li class="mb-2"><strong>Designed for Australian Weather Conditions:</strong> Built tough to withstand extreme heat, wind, and coastal environments.</li>
+          <li class="mb-2"><strong>25-Year Product & 30-Year Performance Warranty:</strong> Industry-leading protection for your solar investment.</li>
         </ul>
-        <h2 class="text-2xl font-semibold mt-6 mb-3">Specifications</h2>
-        <p class="mb-4">Max Output: 5000W<br>Phase: Single Phase<br>Warranty: 10 Years</p>
       `,
-      image: 'https://plus.unsplash.com/premium_photo-1678743133495-49199baeb582?q=80&w=1171&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?q=80&w=800&auto=format&fit=crop',
       images: [
-        'https://plus.unsplash.com/premium_photo-1678743133495-49199baeb582?q=80&w=1171&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1508514177221-188b1c77eca2?q=80&w=1170&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1158&auto=format&fit=crop'
+        'https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?q=80&w=800&auto=format&fit=crop',
+        'https://plus.unsplash.com/premium_photo-1678743133495-49199baeb582?q=80&w=800&auto=format&fit=crop'
       ]
     },
     {
-      title: 'Home Battery Storage 10kWh',
-      slug: 'home-battery-storage-10kwh',
-      summary: 'Store your excess solar energy for nighttime use and protect your home against grid blackouts with our premium battery.',
+      title: 'Trina Solar 475W',
+      slug: 'trina-solar-475w-n-type',
+      summary: 'State-of-the-art 475W i-TOPCon Ultra monocrystalline module, blending premium design with exceptional power output.',
       content: `
-        <p class="mb-4">Achieve true energy independence with our Home Battery Storage 10kWh. Store excess energy generated during the day and use it when you need it most.</p>
+        <p class="mb-4">The Trina Solar 475W N-type i-TOPCon Ultra sets a new standard for residential and commercial solar. Enjoy premium aesthetics combined with ultra-high efficiency.</p>
         <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
         <ul class="list-disc pl-6 mb-4">
-          <li class="mb-2"><strong>Blackout Protection:</strong> Automatically powers essential appliances during grid outages.</li>
-          <li class="mb-2"><strong>High Capacity:</strong> 10kWh usable energy, enough to power most homes through the night.</li>
-          <li class="mb-2"><strong>Compact Design:</strong> Sleek, wall-mounted unit that saves space in your garage.</li>
+          <li class="mb-2"><strong>475W High-Power Output:</strong> Industry-leading output power ensuring maximum yield from your roof space.</li>
+          <li class="mb-2"><strong>N-Type i-TOPCon Ultra Technology:</strong> Next-generation cells providing lower degradation and higher lifetime energy.</li>
+          <li class="mb-2"><strong>Up to 23.8% Module Efficiency:</strong> Optimized performance even in low-light conditions.</li>
+          <li class="mb-2"><strong>Premium Double-Glass Design for Australian Conditions:</strong> Sleek look with unmatched resilience against harsh environments.</li>
+          <li class="mb-2"><strong>25-Year Product & 30-Year Performance Warranty:</strong> Comprehensive coverage for long-term reliability.</li>
         </ul>
-        <h2 class="text-2xl font-semibold mt-6 mb-3">Specifications</h2>
-        <p class="mb-4">Usable Capacity: 10kWh<br>Chemistry: Lithium Iron Phosphate (LiFePO4)<br>Warranty: 10 Years</p>
       `,
-      image: 'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=1331&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=800&auto=format&fit=crop',
       images: [
-        'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=1331&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1620803569805-4c0471b0b754?q=80&w=1170&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1634563491741-692ab6449170?q=80&w=1170&auto=format&fit=crop'
+        'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=800&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1508514177221-188b1c77eca2?q=80&w=800&auto=format&fit=crop'
+      ]
+    },
+    {
+      title: 'Smart Solar Inverter',
+      slug: 'smart-solar-inverter',
+      summary: 'Intelligent solar inverter featuring dual MPPT smart optimization, Wi-Fi monitoring, and up to 97.7% maximum efficiency.',
+      content: `
+        <p class="mb-4">Transform your solar DC power into usable AC power seamlessly. Our Smart Solar Inverter is designed for high performance, safety, and ultimate convenience.</p>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li class="mb-2"><strong>Up to 97.7% Maximum Efficiency:</strong> Minimize energy loss during conversion and maximize your usable power.</li>
+          <li class="mb-2"><strong>Dual MPPT Smart Optimisation:</strong> Optimizes performance across different roof orientations or shading conditions.</li>
+          <li class="mb-2"><strong>Wi-Fi Monitoring Included:</strong> Track your real-time generation and consumption through an intuitive mobile app.</li>
+          <li class="mb-2"><strong>IP66 Weatherproof Design:</strong> Robust construction allowing for safe outdoor installation in any weather.</li>
+          <li class="mb-2"><strong>Advanced Built-in Safety Protection:</strong> Peace of mind with comprehensive electrical safety features built right in.</li>
+        </ul>
+      `,
+      image: 'https://images.unsplash.com/photo-1620803569805-4c0471b0b754?q=80&w=800&auto=format&fit=crop',
+      images: [
+        'https://images.unsplash.com/photo-1620803569805-4c0471b0b754?q=80&w=800&auto=format&fit=crop'
+      ]
+    },
+    {
+      title: 'Premium Battery Storage',
+      slug: 'premium-home-battery-storage',
+      summary: 'High-capacity LiFePO₄ home battery offering up to 100% usable capacity and robust IP65 weatherproofing for reliable backup power.',
+      content: `
+        <p class="mb-4">Achieve true energy independence. Our Premium Home Battery Storage captures your excess solar energy, making it available when the sun goes down or the grid fails.</p>
+        <h2 class="text-2xl font-semibold mt-6 mb-3">Key Features</h2>
+        <ul class="list-disc pl-6 mb-4">
+          <li class="mb-2"><strong>Up to 100% Usable Battery Capacity (100% DoD):</strong> Access every watt of stored energy without damaging the battery lifecycle.</li>
+          <li class="mb-2"><strong>Premium LiFePO₄ Battery Technology:</strong> Safest lithium chemistry with an incredibly long lifespan and stable performance.</li>
+          <li class="mb-2"><strong>Over 95% Round-Trip Efficiency:</strong> Highly efficient charging and discharging for maximum energy retention.</li>
+          <li class="mb-2"><strong>IP65 Weatherproof for Indoor & Outdoor Installation:</strong> Flexible installation options to suit your home's layout.</li>
+        </ul>
+      `,
+      image: 'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=800&auto=format&fit=crop',
+      images: [
+        'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=800&auto=format&fit=crop',
+        'https://images.unsplash.com/photo-1634563491741-692ab6449170?q=80&w=800&auto=format&fit=crop'
       ]
     }
   ]
