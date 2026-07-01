@@ -16,10 +16,10 @@
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center gap-8 text-sm font-semibold transition-colors duration-300"
          [ngClass]="isHeaderWhite ? 'text-slate-600' : 'text-white/90'">
+      <a href="/#hero" class="hover:text-eco-green transition-colors">Home</a>
       <a href="/#benefits" class="hover:text-eco-green transition-colors">Benefits</a>
       <a href="/#services" class="hover:text-eco-green transition-colors">Services</a>
       <a href="/products" class="hover:text-eco-green transition-colors">Products</a>
-      <a href="/#calculator" class="hover:text-eco-green transition-colors">Calculator</a>
       <a href="/blog" class="hover:text-eco-green transition-colors">Blogs</a>
       
       <a href="/#contact" class="bg-eco-green hover:bg-eco-dark text-white px-6 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg font-bold">
@@ -38,11 +38,10 @@
   <div class="md:hidden absolute w-full left-0 bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out"
        [ngClass]="isMobileMenuOpen ? 'max-h-screen border-t border-gray-100 opacity-100' : 'max-h-0 opacity-0'">
     <nav class="flex flex-col px-6 py-4 gap-4 text-slate-700 text-base font-semibold">
+      <a href="/#hero" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Home</a>
       <a href="/#benefits" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Benefits</a>
       <a href="/#services" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Services</a>
       <a href="/products" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Products</a>
-      <a href="/#calculator" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Calculator</a>
-      <a href="/#testimonials" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Testimonials</a>
       <a href="/blog" (click)="closeMobileMenu()" class="hover:text-eco-green py-2 border-b border-gray-100 transition-colors">Blogs</a>
       
       <a href="/#contact" (click)="closeMobileMenu()" class="bg-eco-green hover:bg-eco-dark text-white text-center px-6 py-3 rounded-full transition-all shadow-md mt-2 font-bold">

@@ -2,6 +2,32 @@ export const siteData = {
   companyName: 'Aussie Premium Solar',
   tagline: 'Premium Solar & Battery Solutions',
   description: 'Aussie Premium Solar is a proudly Australian company delivering premium solar and battery installations with experienced in-house installers and trusted local workmanship.',
+  deals: [
+    {
+      size: '6.6 kW',
+      panels: '14 x 475W Tier 1 Panels',
+      inverter: '5 kW Wi-Fi Inverter',
+      price: '$3,590.00*',
+      note: 'fully installed',
+      popular: false
+    },
+    {
+      size: '10.45 kW',
+      panels: '22 x 475W Tier 1 Panels',
+      inverter: '8 kW Wi-Fi Inverter',
+      price: '$4,990.00*',
+      note: 'fully installed',
+      popular: true
+    },
+    {
+      size: '13.2 kW',
+      panels: '28 x 475W Tier 1 Panels',
+      inverter: '10 kW Wi-Fi Inverter',
+      price: '$5,990.00*',
+      note: 'fully installed',
+      popular: false
+    }
+  ],
   whatsappLink: 'https://wa.me/+61480033012',
   contact: {
     phone: '1300 001 708',
@@ -301,11 +327,11 @@ export const siteData = {
           <li class="mb-2"><strong>25-Year Product & 30-Year Performance Warranty:</strong> Long-term peace of mind and guaranteed reliability.</li>
         </ul>
       `,
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
+      image: '/solar_panal1.png',
       images: [
-        'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=800&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1592833159155-c62df1b65634?q=80&w=800&auto=format&fit=crop'
+        '/solar_panal1.png',
+        '/solar_panal2.jpeg',
+        '/solar_panal3.jpeg'
       ]
     },
     {
@@ -347,7 +373,7 @@ export const siteData = {
       image: 'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=800&auto=format&fit=crop',
       images: [
         'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=800&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1508514177221-188b1c77eca2?q=80&w=800&auto=format&fit=crop'
+        '/solar_panal2.jpeg'
       ]
     },
     {
@@ -365,9 +391,9 @@ export const siteData = {
           <li class="mb-2"><strong>Advanced Built-in Safety Protection:</strong> Peace of mind with comprehensive electrical safety features built right in.</li>
         </ul>
       `,
-      image: 'https://images.unsplash.com/photo-1620803569805-4c0471b0b754?q=80&w=800&auto=format&fit=crop',
+      image: '/inverter1.png',
       images: [
-        'https://images.unsplash.com/photo-1620803569805-4c0471b0b754?q=80&w=800&auto=format&fit=crop'
+        '/inverter1.png'
       ]
     },
     {
@@ -384,10 +410,9 @@ export const siteData = {
           <li class="mb-2"><strong>IP65 Weatherproof for Indoor & Outdoor Installation:</strong> Flexible installation options to suit your home's layout.</li>
         </ul>
       `,
-      image: 'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=800&auto=format&fit=crop',
+      image: '/battery1.jpeg',
       images: [
-        'https://images.unsplash.com/photo-1655300256335-beef51a914fe?q=80&w=800&auto=format&fit=crop',
-        'https://images.unsplash.com/photo-1634563491741-692ab6449170?q=80&w=800&auto=format&fit=crop'
+        '/battery1.jpeg'
       ]
     }
   ]
