@@ -16,6 +16,11 @@ export const siteData = {
       publicKey: '60NMyMvvjVUgnbMKG', // e.g., 'YOUR_PUBLIC_KEY' (User ID)
     }
   },
+  socials: {
+    facebook: 'https://www.facebook.com/aussiepremiumsolar',
+    instagram: 'https://www.instagram.com/aussiepremiumsolar',
+    linkedin: 'https://www.linkedin.com/company/aussiepremiumsolar'
+  },
   suppliers: [
     { name: 'AlphaESS', logo: '/AlphaESS.png' },
     { name: 'FoxESS', logo: '/FoxESS.png' },
