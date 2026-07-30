@@ -45,7 +45,7 @@ export const siteData = {
   socials: {
     facebook: 'https://www.facebook.com/aussiepremiumsolar',
     instagram: 'https://www.instagram.com/aussiepremiumsolar',
-    linkedin: 'https://www.linkedin.com/company/aussiepremiumsolar'
+    linkedin: 'https://www.linkedin.com/in/aussie-premium-solar-a161a4419/'
   },
   suppliers: [
     { name: 'AlphaESS', logo: '/AlphaESS.png' },
