@@ -37,9 +37,9 @@ export const siteData = {
     // EmailJS Configuration
     // Go to https://www.emailjs.com/ to create an account and get these keys
     emailJS: {
-      serviceId: 'service_SolarWeb', // e.g., 'service_xxxxx'
-      templateId: 'template_solarWeb', // e.g., 'template_xxxxx'
-      publicKey: '60NMyMvvjVUgnbMKG', // e.g., 'YOUR_PUBLIC_KEY' (User ID)
+      serviceId: 'service_Zoho_aussie', // e.g., 'service_xxxxx'
+      templateId: 'template_p8q2xth', // e.g., 'template_xxxxx'
+      publicKey: 'Lzbr6kBJWOlsi58_1', // e.g., 'YOUR_PUBLIC_KEY' (User ID)
     }
   },
   socials: {
