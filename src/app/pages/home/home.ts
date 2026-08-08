@@ -6,6 +6,8 @@ import { BenefitsComponent } from '../../components/benefits/benefits';
 import { TestimonialsComponent } from '../../components/testimonials/testimonials';
 import { ContactComponent } from '../../components/contact/contact';
 import { SuppliersComponent } from '../../components/suppliers/suppliers';
+import { PackagesComponent } from '../../components/packages/packages';
+import { WhyChooseComponent } from '../../components/why-choose/why-choose';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +18,8 @@ import { SuppliersComponent } from '../../components/suppliers/suppliers';
     BenefitsComponent,
     CalculatorComponent,
     ServicesComponent,
+    PackagesComponent,
+    WhyChooseComponent,
     TestimonialsComponent,
     ContactComponent
   ],

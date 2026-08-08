@@ -18,7 +18,7 @@
         >
           <!-- Material Symbol Icon -->
           <div
-            class="w-16 h-16 rounded-2xl bg-slate-100 group-hover:bg-eco-green flex items-center justify-center text-slate-400 group-hover:text-white transition-colors mb-6 shadow-sm"
+            class="w-16 h-16 rounded-2xl bg-slate-100 group-hover:bg-brand-gold flex items-center justify-center text-slate-400 group-hover:text-white transition-colors mb-6 shadow-sm"
           >
             <span class="material-symbols-outlined text-3xl">{{ service.iconText }}</span>
           </div>
@@ -26,34 +26,6 @@
           <p class="text-slate-600 leading-relaxed">{{ service.description }}</p>
         </div>
       }
-    </div>
-
-    <!-- Why Choose Us -->
-    <div class="mt-24 grid lg:grid-cols-2 gap-16 items-center">
-      <div class="relative rounded-3xl overflow-hidden shadow-2xl h-[500px]">
-        <div
-          class="absolute inset-0 bg-cover bg-center"
-          [style.background-image]="'url(' + data.images.whyChooseBg + ')'"
-        ></div>
-      </div>
-
-      <div>
-        <h3 class="text-2xl md:text-4xl font-extrabold text-slate-800 mb-8">Why Choose Us?</h3>
-
-        <div class="grid gap-4">
-          @for (item of whyChoose; track item) {
-            <div
-              class="flex items-center gap-4 bg-white rounded-2xl p-5 shadow-sm border border-slate-100 hover:border-eco-green transition-colors"
-            >
-              <!-- Material Symbol Checkmark -->
-              <div class="w-8 h-8 rounded-full bg-eco-green/10 flex items-center justify-center text-eco-green">
-                <span class="material-symbols-outlined">check_circle</span>
-              </div>
-              <p class="text-lg font-semibold text-slate-700">{{ item }}</p>
-            </div>
-          }
-        </div>
-      </div>
     </div>
   </div>
 </section>

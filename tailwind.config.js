@@ -6,10 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        eco: {
-          green: '#10b981', // emerald-500
-          dark: '#064e3b',  // emerald-900
-          blue: '#2563eb',  // blue-600
+        brand: {
+          navy: '#0a1128',
+          'navy-light': '#152140',
+          gold: '#d4af37',
+          'gold-light': '#e6c86a',
         }
       }
     },

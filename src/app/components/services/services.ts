@@ -13,7 +13,4 @@ import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive'
 export class ServicesComponent {
   dataService = inject(DataService);
   services = this.dataService.siteData().services;
-  whyChoose = this.dataService.siteData().whyChoose;
-    data = this.dataService.siteData();
-
 }

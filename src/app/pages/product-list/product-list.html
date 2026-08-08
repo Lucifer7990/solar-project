@@ -1,8 +1,8 @@
 <div class="py-16 md:py-24 bg-gradient-to-br from-slate-50 via-white to-slate-100 min-h-screen relative overflow-hidden">
   <!-- Decorative background elements -->
   <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-    <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-eco-green/10 blur-[120px]"></div>
-    <div class="absolute bottom-[10%] -right-[10%] w-[40%] h-[40%] rounded-full bg-eco-blue/5 blur-[100px]"></div>
+    <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-brand-gold/10 blur-[120px]"></div>
+    <div class="absolute bottom-[10%] -right-[10%] w-[40%] h-[40%] rounded-full bg-brand-navy-light/5 blur-[100px]"></div>
   </div>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -13,7 +13,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       @for (product of products; track product.slug) {
-      <article appScrollReveal class="group relative rounded-xl overflow-hidden backdrop-blur-md bg-white/60 border border-slate-200/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_40px_rgba(16,185,129,0.15)] transition-all duration-500 flex flex-col hover:-translate-y-2 cursor-pointer">
+      <article appScrollReveal class="group relative rounded-xl overflow-hidden backdrop-blur-md bg-white/60 border border-slate-200/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_40px_rgba(212,175,55,0.15)] transition-all duration-500 flex flex-col hover:-translate-y-2 cursor-pointer">
         
         <!-- Image Container -->
         <div class="relative h-72 overflow-hidden bg-slate-100/50" [routerLink]="['/products', product.slug]">
@@ -23,7 +23,7 @@
 
         <!-- Content Area -->
         <div class="p-6 flex-grow flex flex-col relative z-20 bg-gradient-to-b from-white/40 to-white/90">
-          <h2 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-eco-green transition-colors duration-300 leading-tight line-clamp-2 min-h-[3.5rem]" [routerLink]="['/products', product.slug]">
+          <h2 class="text-lg font-bold text-slate-800 mb-2 group-hover:text-brand-gold transition-colors duration-300 leading-tight line-clamp-2 min-h-[3.5rem]" [routerLink]="['/products', product.slug]">
             {{ product.title }}
           </h2>
           
@@ -34,10 +34,10 @@
           }
 
           <div class="mt-auto flex flex-row gap-2 sm:gap-3">
-            <a [routerLink]="['/products', product.slug]" class="flex-1 inline-flex justify-center items-center px-2 sm:px-4 py-3 border-2 border-eco-green text-sm font-bold rounded-lg text-eco-green hover:bg-eco-green hover:text-white transition-colors duration-300 text-center">
+            <a [routerLink]="['/products', product.slug]" class="flex-1 inline-flex justify-center items-center px-2 sm:px-4 py-3 border-2 border-brand-gold text-sm font-bold rounded-lg text-brand-gold hover:bg-brand-gold hover:text-white transition-colors duration-300 text-center">
               Details
             </a>
-            <a href="/#contact" class="flex-1 relative inline-flex justify-center items-center px-2 sm:px-4 py-3 border border-transparent text-sm font-bold rounded-lg text-white bg-gradient-to-r from-eco-green to-emerald-400 hover:from-eco-dark hover:to-eco-green shadow-sm hover:shadow-[0_4px_20px_rgba(16,185,129,0.3)] transition-all duration-300 overflow-hidden group/btn text-center">
+            <a href="/#contact" class="flex-1 relative inline-flex justify-center items-center px-2 sm:px-4 py-3 border border-transparent text-sm font-bold rounded-lg text-white bg-gradient-to-r from-brand-gold to-brand-gold hover:from-brand-navy hover:to-brand-gold shadow-sm hover:shadow-[0_4px_20px_rgba(212,175,55,0.3)] transition-all duration-300 overflow-hidden group/btn text-center">
               <span class="relative z-10 flex items-center">
                 Quote
                 <span class="material-symbols-outlined ml-1 text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
@@ -49,7 +49,7 @@
         </div>
         
         <!-- Decorative border gradient that appears on hover -->
-        <div class="absolute inset-0 border-2 border-transparent group-hover:border-eco-green/40 rounded-xl transition-colors duration-500 pointer-events-none"></div>
+        <div class="absolute inset-0 border-2 border-transparent group-hover:border-brand-gold/40 rounded-xl transition-colors duration-500 pointer-events-none"></div>
       </article>
       }
     </div>

@@ -1,7 +1,7 @@
 <section id="contact" class="py-12 bg-slate-900 relative overflow-hidden">
   <!-- Background Design Elements -->
   <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
-    <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-eco-green opacity-10 rounded-full blur-[100px]">
+    <div class="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] bg-brand-gold opacity-10 rounded-full blur-[100px]">
     </div>
     <div class="absolute bottom-[10%] -right-[10%] w-[40%] h-[60%] bg-blue-600 opacity-10 rounded-full blur-[100px]">
     </div>
@@ -23,7 +23,7 @@
       <div class="space-y-8">
         <div class="flex items-start gap-4">
           <div
-            class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 shadow-inner text-eco-green">
+            class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 shadow-inner text-brand-gold">
             <span class="material-symbols-outlined">call</span>
           </div>
           <div>
@@ -34,7 +34,7 @@
 
         <div class="flex items-start gap-4">
           <div
-            class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 shadow-inner text-eco-green">
+            class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 shadow-inner text-brand-gold">
             <span class="material-symbols-outlined">mail</span>
           </div>
           <div>
@@ -45,7 +45,7 @@
 
         <div class="flex items-start gap-4">
           <div
-            class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 shadow-inner text-eco-green">
+            class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center border border-slate-700 shadow-inner text-brand-gold">
             <span class="material-symbols-outlined">location_on</span>
           </div>
           <div>
@@ -81,26 +81,26 @@
           <div>
             <label class="block text-sm font-bold text-slate-500 mb-1.5">Full Name *</label>
             <input type="text" name="name" [(ngModel)]="name" required
-              class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-eco-green focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
+              class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
           </div>
 
           <div>
             <label class="block text-sm font-bold text-slate-500 mb-1.5">Phone Number *</label>
             <input type="tel" name="phone" [(ngModel)]="phone" required
-              class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-eco-green focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
+              class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
           </div>
         </div>
 
         <div>
           <label class="block text-sm font-bold text-slate-500 mb-1.5">Email Address</label>
           <input type="email" name="email" [(ngModel)]="email"
-            class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-eco-green focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
+            class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
         </div>
         
         <div>
           <label class="block text-sm font-bold text-slate-500 mb-1.5">Message</label>
           <textarea name="message" [(ngModel)]="message" rows="2"
-            class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-eco-green focus:bg-white transition-colors text-slate-800 text-sm font-medium"></textarea>
+            class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium"></textarea>
         </div>
         
         <!-- Math Captcha & Submit Group -->
@@ -108,7 +108,7 @@
           <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 flex-1 flex flex-col justify-center">
             <label class="block text-xs font-bold text-slate-500 mb-1">Security Check: What is {{num1()}} + {{num2()}}? *</label>
             <input type="text" name="captcha" [(ngModel)]="captchaAnswer" required
-              class="w-full bg-white border border-slate-300 rounded-lg px-3 py-1.5 outline-none focus:border-eco-green transition-colors text-slate-800 text-sm font-medium"
+              class="w-full bg-white border border-slate-300 rounded-lg px-3 py-1.5 outline-none focus:border-brand-gold transition-colors text-slate-800 text-sm font-medium"
               [class.border-red-500]="captchaError()" />
             @if (captchaError()) {
               <p class="text-red-500 text-[10px] mt-1 font-bold absolute">Incorrect answer</p>
@@ -116,7 +116,7 @@
           </div>
 
           <button type="submit" [disabled]="contactForm.invalid || isSubmitting()"
-            class="flex-1 bg-eco-green hover:bg-emerald-400 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold text-base py-3.5 px-6 rounded-xl transition-all shadow-md hover:shadow-lg flex justify-center items-center gap-2 h-[68px]">
+            class="flex-1 bg-brand-gold hover:bg-brand-gold disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold text-base py-3.5 px-6 rounded-xl transition-all shadow-md hover:shadow-lg flex justify-center items-center gap-2 h-[68px]">
             @if (isSubmitting()) {
               <span class="material-symbols-outlined animate-spin text-lg">progress_activity</span>
             }
