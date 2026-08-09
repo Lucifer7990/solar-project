@@ -4,6 +4,7 @@ import { DataService } from '../../services/data.service';
 import { RouterModule, Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { filter } from 'rxjs/operators';
+import { PopupService } from '../../services/popup.service';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,7 @@ import { filter } from 'rxjs/operators';
 export class HeaderComponent {
   dataService = inject(DataService);
   router = inject(Router);
+  popupService = inject(PopupService);
   data = this.dataService.siteData();
   
   isScrolled = false;
@@ -30,7 +32,7 @@ export class HeaderComponent {
   }
 
   get isHeaderWhite() {
-    return !this.isHomePage || this.isScrolled || this.isMobileMenuOpen;
+    return true;
   }
 
   @HostListener('window:scroll', [])

@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 import { DataService } from '../../services/data.service';
 import { SeoService } from '../../services/seo.service';
+import { PopupService } from '../../services/popup.service';
 
 @Component({
   selector: 'app-product-list',
@@ -14,6 +15,7 @@ import { SeoService } from '../../services/seo.service';
 export class ProductListComponent implements OnInit {
   dataService = inject(DataService);
   seoService = inject(SeoService);
+  popupService = inject(PopupService);
   products = this.dataService.siteData().products || [];
 
   ngOnInit() {

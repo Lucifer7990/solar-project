@@ -37,9 +37,9 @@
             <a [routerLink]="['/products', product.slug]" class="flex-1 inline-flex justify-center items-center px-2 sm:px-4 py-3 border-2 border-brand-gold text-sm font-bold rounded-lg text-brand-gold hover:bg-brand-gold hover:text-white transition-colors duration-300 text-center">
               Details
             </a>
-            <a href="/#contact" class="flex-1 relative inline-flex justify-center items-center px-2 sm:px-4 py-3 border border-transparent text-sm font-bold rounded-lg text-white bg-gradient-to-r from-brand-gold to-brand-gold hover:from-brand-navy hover:to-brand-gold shadow-sm hover:shadow-[0_4px_20px_rgba(212,175,55,0.3)] transition-all duration-300 overflow-hidden group/btn text-center">
+            <a (click)="popupService.openPopup()" class="cursor-pointer flex-1 relative inline-flex justify-center items-center px-2 sm:px-4 py-3 border border-transparent text-sm font-bold rounded-lg text-white bg-gradient-to-r from-brand-gold to-brand-gold hover:from-brand-navy hover:to-brand-gold shadow-sm hover:shadow-[0_4px_20px_rgba(212,175,55,0.3)] transition-all duration-300 overflow-hidden group/btn text-center">
               <span class="relative z-10 flex items-center">
-                Quote
+                Get a Quote
                 <span class="material-symbols-outlined ml-1 text-[18px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
               </span>
               <!-- Button glow effect -->

@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header';
 import { FooterComponent } from './components/footer/footer';
 import { filter } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
+import { QuotePopupComponent } from './components/quote-popup/quote-popup';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { CommonModule } from '@angular/common';
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-    CommonModule
+    CommonModule,
+    QuotePopupComponent
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'

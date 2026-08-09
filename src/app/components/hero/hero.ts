@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 import { DataService } from '../../services/data.service';
+import { PopupService } from '../../services/popup.service';
 
 @Component({
   selector: 'app-hero',
@@ -14,5 +15,6 @@ import { DataService } from '../../services/data.service';
 })
 export class HeroComponent {
   dataService = inject(DataService);
+  popupService = inject(PopupService);
   data = this.dataService.siteData();
 }

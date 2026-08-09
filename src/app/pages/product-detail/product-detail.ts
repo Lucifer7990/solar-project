@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { DataService } from '../../services/data.service';
 import { SeoService } from '../../services/seo.service';
+import { PopupService } from '../../services/popup.service';
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 
 @Component({
@@ -16,6 +17,7 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   dataService = inject(DataService);
   seoService = inject(SeoService);
   router = inject(Router);
+  popupService = inject(PopupService);
   
   product: any;
   selectedImage: string = '';

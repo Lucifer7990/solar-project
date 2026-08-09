@@ -34,43 +34,43 @@ export const siteData = {
       title: 'Solar Battery',
       items: [
         {
-          title: '5kWh',
+          title: '28kWh',
           subtitle: 'Solar Battery Only',
           image: '/solar_panal1.png',
           panelInfo: 'N/A',
           panelDesc: 'Existing Solar Required',
-          batteryInfo: '1 x 5kWh',
+          batteryInfo: '1 x 28kWh',
           batteryDesc: 'Solar Battery',
           features: [
-            '5 kWh/day Battery Add-On',
+            '28 kWh/day Battery Add-On',
             '10 Yrs (Battery) Warranty',
             '4-6 years Payback Period'
           ]
         },
         {
-          title: '10kWh',
+          title: '42kWh',
           subtitle: 'Solar Battery Only',
           image: '/solar_panal1.png',
           panelInfo: 'N/A',
           panelDesc: 'Existing Solar Required',
-          batteryInfo: '1 x 10kWh',
+          batteryInfo: '1 x 42kWh',
           batteryDesc: 'Solar Battery',
           features: [
-            '10 kWh/day Battery Add-On',
+            '42 kWh/day Battery Add-On',
             '10 Yrs (Battery) Warranty',
             '3-5 years Payback Period'
           ]
         },
         {
-          title: '15kWh',
+          title: '48kWh',
           subtitle: 'Solar Battery Only',
           image: '/solar_panal1.png',
           panelInfo: 'N/A',
           panelDesc: 'Existing Solar Required',
-          batteryInfo: '1 x 15kWh',
+          batteryInfo: '1 x 48kWh',
           batteryDesc: 'Solar Battery',
           features: [
-            '15 kWh/day Battery Add-On',
+            '48 kWh/day Battery Add-On',
             '10 Yrs (Battery) Warranty',
             '3-5 years Payback Period'
           ]
@@ -87,10 +87,10 @@ export const siteData = {
           image: '/solar_panal1.png',
           panelInfo: '14 X 475W',
           panelDesc: 'Tier 1 Solar Panels',
-          batteryInfo: '1 X 10kWh',
+          batteryInfo: '1 X 14kWh',
           batteryDesc: 'Solar Battery',
           features: [
-            '10 kWh/day Battery Add-On',
+            '14 kWh/day Battery Add-On',
             '25 Yrs (Panel), 10 Yrs (Battery) Warranty',
             '3-5 years Payback Period'
           ]
@@ -101,10 +101,10 @@ export const siteData = {
           image: '/solar_panal1.png',
           panelInfo: '22 X 475W',
           panelDesc: 'Tier 1 Solar Panels',
-          batteryInfo: '1 X 10kWh',
+          batteryInfo: '1 X 28kWh',
           batteryDesc: 'Solar Battery',
           features: [
-            '10 kWh/day Battery Add-On',
+            '28 kWh/day Battery Add-On',
             '25 Yrs (Panel), 10 Yrs (Battery) Warranty',
             '3-5 years Payback Period'
           ]
@@ -115,10 +115,10 @@ export const siteData = {
           image: '/solar_panal1.png',
           panelInfo: '28 X 475W',
           panelDesc: 'Tier 1 Solar Panels',
-          batteryInfo: '1 X 10kWh',
+          batteryInfo: '1 X 42kWh',
           batteryDesc: 'Solar Battery',
           features: [
-            '10 kWh/day Battery Add-On',
+            '42 kWh/day Battery Add-On',
             '25 Yrs (Panel), 10 Yrs (Battery) Warranty',
             '3-5 years Payback Period'
           ]
