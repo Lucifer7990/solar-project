@@ -31,8 +31,8 @@ export class HeaderComponent {
     });
   }
 
-  get isHeaderWhite() {
-    return true;
+  get isHeaderDark() {
+    return !this.isHomePage || this.isScrolled || this.isMobileMenuOpen;
   }
 
   @HostListener('window:scroll', [])

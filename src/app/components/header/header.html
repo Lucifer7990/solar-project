@@ -1,4 +1,4 @@
-<header [ngClass]="isHeaderWhite ? 'bg-white/80 backdrop-blur-md shadow-sm border-b border-white/20' : 'bg-transparent border-b border-transparent'" 
+<header [ngClass]="isHeaderDark ? 'bg-brand-navy shadow-lg border-b border-white/10' : 'bg-transparent border-b border-transparent'" 
         class="fixed w-full top-0 z-50 transition-all duration-300">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative z-50 bg-transparent">
     <a href="/#hero" class="flex items-center gap-3 cursor-pointer group">
@@ -14,8 +14,7 @@
     </a>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold transition-colors duration-300"
-         [ngClass]="isHeaderWhite ? 'text-slate-600' : 'text-white/90'">
+    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold transition-colors duration-300 text-white/90">
       <a href="/#hero" class="hover:text-brand-gold transition-colors">Home</a>
       <a href="/#benefits" class="hover:text-brand-gold transition-colors">Benefits</a>
       <a href="/#services" class="hover:text-brand-gold transition-colors">Services</a>
@@ -28,21 +27,20 @@
     </nav>
 
     <!-- Mobile Menu Toggle Button -->
-    <button (click)="toggleMobileMenu()" class="md:hidden flex items-center focus:outline-none transition-colors duration-300"
-            [ngClass]="isHeaderWhite ? 'text-brand-navy hover:text-brand-gold' : 'text-white hover:text-green-300'">
+    <button (click)="toggleMobileMenu()" class="md:hidden flex items-center focus:outline-none transition-colors duration-300 text-white hover:text-brand-gold">
       <span class="material-symbols-outlined text-3xl">{{ isMobileMenuOpen ? 'close' : 'menu' }}</span>
     </button>
   </div>
 
   <!-- Mobile Navigation Menu -->
-  <div class="md:hidden absolute w-full left-0 bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out"
-       [ngClass]="isMobileMenuOpen ? 'max-h-screen border-t border-gray-100 opacity-100' : 'max-h-0 opacity-0'">
-    <nav class="flex flex-col px-6 py-4 gap-4 text-slate-700 text-base font-semibold">
-      <a href="/#hero" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-gray-100 transition-colors">Home</a>
-      <a href="/#benefits" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-gray-100 transition-colors">Benefits</a>
-      <a href="/#services" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-gray-100 transition-colors">Services</a>
-      <a href="/products" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-gray-100 transition-colors">Products</a>
-      <a href="/blog" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-gray-100 transition-colors">Blogs</a>
+  <div class="md:hidden absolute w-full left-0 bg-brand-navy shadow-lg overflow-hidden transition-all duration-300 ease-in-out"
+       [ngClass]="isMobileMenuOpen ? 'max-h-screen border-t border-white/10 opacity-100' : 'max-h-0 opacity-0'">
+    <nav class="flex flex-col px-6 py-4 gap-4 text-white text-base font-semibold">
+      <a href="/#hero" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-white/10 transition-colors">Home</a>
+      <a href="/#benefits" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-white/10 transition-colors">Benefits</a>
+      <a href="/#services" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-white/10 transition-colors">Services</a>
+      <a href="/products" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-white/10 transition-colors">Products</a>
+      <a href="/blog" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-white/10 transition-colors">Blogs</a>
       
       <a (click)="closeMobileMenu(); popupService.openPopup()" class="cursor-pointer bg-brand-gold hover:bg-brand-navy text-white text-center px-6 py-3 rounded-full transition-all shadow-md mt-2 font-bold">
         Get Quote
