@@ -28,7 +28,7 @@
 
     <!-- Mobile Menu Toggle Button -->
     <button (click)="toggleMobileMenu()" class="md:hidden flex items-center focus:outline-none transition-colors duration-300 text-white hover:text-brand-gold">
-      <span class="material-symbols-outlined text-3xl">{{ isMobileMenuOpen ? 'close' : 'menu' }}</span>
+      <i class="ph text-3xl" [ngClass]="isMobileMenuOpen ? 'ph-x' : 'ph-list'"></i>
     </button>
   </div>
 

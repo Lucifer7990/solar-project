@@ -209,22 +209,22 @@ export const siteData = {
     {
       title: 'Residential Solar',
       description: 'Premium rooftop solar systems designed for homes using high-quality panels, inverters, and expert local installation.',
-      iconText: 'solar_power'
+      iconText: 'ph-fill ph-solar-panel'
     },
     {
       title: 'Battery Storage',
       description: 'Store your excess solar energy and reduce dependence on rising electricity costs with advanced battery solutions.',
-      iconText: 'battery_charging_full'
+      iconText: 'ph-fill ph-battery-high'
     },
     {
       title: 'Commercial Solar',
       description: 'Custom-designed commercial solar solutions to help businesses reduce operating costs and improve energy efficiency.',
-      iconText: 'domain'
+      iconText: 'ph-fill ph-buildings'
     },
     {
       title: 'CEC Certified',
       description: 'All installations are completed by experienced installers and CEC-certified professionals.',
-      iconText: 'verified'
+      iconText: 'ph-fill ph-seal-check'
     }
   ],
   whyChoose: [
