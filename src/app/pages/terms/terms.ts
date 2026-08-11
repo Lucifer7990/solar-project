@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, inject } from '@angular/core';
+import { DataService } from '../../services/data.service';
 @Component({
   selector: 'app-terms',
   standalone: true,
@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './terms.html'
 })
 export class TermsComponent {
+  data = inject(DataService).siteData();
 }

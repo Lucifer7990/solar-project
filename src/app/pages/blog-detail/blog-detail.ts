@@ -35,7 +35,7 @@ export class BlogDetailComponent implements OnInit, OnChanges {
 
     if (this.blog) {
       this.seoService.setSeoData(
-        `${this.blog.title} | Aussie Premium Solar`,
+        `${this.blog.title} | ${this.dataService.siteData().companyName}`,
         this.blog.description || this.blog.summary,
         this.blog.keywords || 'solar energy, australia',
         this.blog.image

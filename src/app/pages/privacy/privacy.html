@@ -3,9 +3,9 @@
     <div class="text-center mb-16 pt-10">
       <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Privacy Policy</h1>
       <div class="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
-        <p class="font-bold mb-2">Aussie Premium Solar Pty Ltd<br>ACN: 698 723 027</p>
+        <p class="font-bold mb-2">{{ data.companyName }} Pty Ltd<br>ACN: 698 723 027</p>
         <p class="mb-4">
-          Aussie Premium Solar Pty Ltd ("Aussie Premium Solar", "we", "us" or "our") is committed to protecting your privacy and managing your personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs).
+          {{ data.companyName }} Pty Ltd ("{{ data.companyName }}", "we", "us" or "our") is committed to protecting your privacy and managing your personal information in accordance with the Privacy Act 1988 (Cth) and the Australian Privacy Principles (APPs).
         </p>
         <p>
           This Privacy Policy explains how we collect, use, disclose, store and protect your personal information when you interact with us, our website, our employees, contractors or authorised representatives.
@@ -100,8 +100,8 @@
                 <p>You may request access to the personal information we hold about you.</p>
                 <p>If you believe any information is inaccurate, incomplete or out of date, you may request that it be corrected.</p>
                 <p>Requests should be sent to:</p>
-                <p class="font-bold">Privacy Officer<br>Aussie Premium Solar Pty Ltd</p>
-                <p>Email: <a href="mailto:info@aussiepremiumsolar.com.au" class="text-brand-gold hover:underline">info@aussiepremiumsolar.com.au</a></p>
+                <p class="font-bold">Privacy Officer<br>{{ data.companyName }} Pty Ltd</p>
+                <p>Email: <a href="mailto:{{ data.contact.email }}" class="text-brand-gold hover:underline">{{ data.contact.email }}</a></p>
                 <p>We may require proof of identity before providing access. Where permitted by law, a reasonable administrative fee may apply.</p>
             </div>
         </div>
@@ -131,7 +131,7 @@
             </div>
             <div class="prose prose-lg prose-slate max-w-none text-slate-600 pl-14">
                 <p>If you believe we have breached the Australian Privacy Principles, please contact our Privacy Officer.</p>
-                <p>Email: <a href="mailto:info@aussiepremiumsolar.com.au" class="text-brand-gold hover:underline">info@aussiepremiumsolar.com.au</a></p>
+                <p>Email: <a href="mailto:{{ data.contact.email }}" class="text-brand-gold hover:underline">{{ data.contact.email }}</a></p>
                 <p>We aim to investigate and respond within a reasonable time. If you remain dissatisfied, you may contact the Office of the Australian Information Commissioner (OAIC).</p>
             </div>
         </div>
@@ -160,10 +160,10 @@
             </div>
             <div class="prose prose-lg prose-slate max-w-none text-slate-600 pl-14">
                 <p>For questions about this Privacy Policy or the handling of your personal information, please contact:</p>
-                <p class="font-bold">Privacy Officer<br>Aussie Premium Solar Pty Ltd</p>
-                <p>Email: <a href="mailto:info@aussiepremiumsolar.com.au" class="text-brand-gold hover:underline">info@aussiepremiumsolar.com.au</a></p>
+                <p class="font-bold">Privacy Officer<br>{{ data.companyName }} Pty Ltd</p>
+                <p>Email: <a href="mailto:{{ data.contact.email }}" class="text-brand-gold hover:underline">{{ data.contact.email }}</a></p>
                 <p>Website: <a href="https://www.aussiepremiumsolar.com.au" class="text-brand-gold hover:underline">www.aussiepremiumsolar.com.au</a></p>
-                <p>Phone: 1300 001 708</p>
+                <p>Phone: {{ data.contact.phone }}</p>
             </div>
         </div>
 

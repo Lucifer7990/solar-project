@@ -40,7 +40,7 @@ export class ProductDetailComponent implements OnInit, OnChanges {
       this.selectedImage = this.product.images && this.product.images.length > 0 ? this.product.images[0] : this.product.image;
 
       this.seoService.setSeoData(
-        `${this.product.title} | Aussie Premium Solar`,
+        `${this.product.title} | ${this.dataService.siteData().companyName}`,
         this.product.summary,
         'solar energy, products, australia',
         this.product.image

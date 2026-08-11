@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, inject } from '@angular/core';
+import { DataService } from '../../services/data.service';
 @Component({
   selector: 'app-privacy',
   standalone: true,
@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './privacy.html'
 })
 export class PrivacyComponent {
+  data = inject(DataService).siteData();
 }

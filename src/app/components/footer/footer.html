@@ -3,7 +3,7 @@
     <div>
       <div class="flex items-center gap-3 mb-4">
         <a routerLink="/" class="block">
-          <img src="/logo.png" alt="Aussie Premium Solar Logo" loading="lazy" class="h-10 w-auto object-contain" />
+          <img src="/logo.png" [alt]="data.companyName + ' Logo'" loading="lazy" class="h-10 w-auto object-contain" />
         </a>
         <h4 class="text-white font-bold text-xl">{{ data.companyName }}</h4>
       </div>
