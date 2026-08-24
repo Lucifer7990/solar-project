@@ -20,6 +20,8 @@ export class ContactComponent implements OnInit {
   name = signal('');
   phone = signal('');
   email = signal('');
+  suburb = signal('');
+  postalCode = signal('');
   message = signal('');
 
   // CAPTCHA properties using Signals
@@ -83,6 +85,8 @@ export class ContactComponent implements OnInit {
             from_name: this.name(),
             reply_to: this.email(),
             phone_number: this.phone(),
+            suburb: this.suburb(),
+            postal_code: this.postalCode(),
             message: this.message() || 'No message provided.'
           }
         })
@@ -94,6 +98,8 @@ export class ContactComponent implements OnInit {
         this.name.set('');
         this.phone.set('');
         this.email.set('');
+        this.suburb.set('');
+        this.postalCode.set('');
         this.message.set('');
         this.generateCaptcha();
       } else {

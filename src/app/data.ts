@@ -234,21 +234,25 @@ export const siteData = {
     'Solar & battery specialists',
     'Residential & commercial systems',
   ],
-  testimonials: [
+  googleReviewLink: 'https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review',
+  googleReviews: [
     {
       name: 'John D.',
-      text: 'Fantastic service from start to finish. Our energy bills have dropped significantly.',
-      role: 'Homeowner, Perth'
+      text: 'Fantastic service from start to finish. Our energy bills have dropped significantly. The installation team was very professional and left no mess behind.',
+      rating: 5,
+      date: '2 weeks ago'
     },
     {
       name: 'Sarah M.',
-      text: 'Highly professional team. The installation was quick, clean, and the system works perfectly.',
-      role: 'Business Owner, Australia'
+      text: 'Highly professional team. The installation was quick, clean, and the system works perfectly. Great communication throughout the entire process.',
+      rating: 5,
+      date: '1 month ago'
     },
     {
       name: 'David L.',
-      text: 'Great communication and a very competitive price. Highly recommend their battery solutions.',
-      role: 'Resident, Fremantle'
+      text: 'Great communication and a very competitive price. Highly recommend their battery solutions. Our solar system has been performing flawlessly.',
+      rating: 5,
+      date: '3 months ago'
     }
   ],
   images: {

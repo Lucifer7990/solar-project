@@ -21,6 +21,8 @@ export class QuotePopupComponent implements OnInit {
   name = signal('');
   phone = signal('');
   email = signal('');
+  suburb = signal('');
+  postalCode = signal('');
   message = signal('');
 
   // CAPTCHA properties using Signals
@@ -58,6 +60,8 @@ export class QuotePopupComponent implements OnInit {
     this.name.set('');
     this.phone.set('');
     this.email.set('');
+    this.suburb.set('');
+    this.postalCode.set('');
     this.message.set('');
     this.submitSuccess.set(false);
     this.submitError.set(false);
@@ -129,6 +133,8 @@ export class QuotePopupComponent implements OnInit {
             from_name: this.name(),
             reply_to: this.email(),
             phone_number: this.phone(),
+            suburb: this.suburb(),
+            postal_code: this.postalCode(),
             message: this.message() || 'No message provided.'
           }
         })
