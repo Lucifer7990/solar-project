@@ -234,25 +234,25 @@ export const siteData = {
     'Solar & battery specialists',
     'Residential & commercial systems',
   ],
-  googleReviewLink: 'https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review',
+  googleReviewLink: 'https://g.page/r/CXywZoRYlyOvEBM/review',
   googleReviews: [
     {
-      name: 'John D.',
-      text: 'Fantastic service from start to finish. Our energy bills have dropped significantly. The installation team was very professional and left no mess behind.',
+      name: 'Vishal Shah',
+      text: 'Very nice work . Clean and tidy. Highly recommended',
       rating: 5,
-      date: '2 weeks ago'
+      date: ''
     },
     {
-      name: 'Sarah M.',
-      text: 'Highly professional team. The installation was quick, clean, and the system works perfectly. Great communication throughout the entire process.',
+      name: 'Daniel Morton',
+      text: 'I already had a solar system and engaged Andrew for a battery. The work was completed quickly from the time of my first inquiry. It has been working efficiently for a bout a month now. They were easy to deal with.',
       rating: 5,
-      date: '1 month ago'
+      date: ''
     },
     {
-      name: 'David L.',
-      text: 'Great communication and a very competitive price. Highly recommend their battery solutions. Our solar system has been performing flawlessly.',
+      name: 'vishwanath kudtarkar',
+      text: 'It was a great experience, Gary assisted from the day 1 with competitive price and product details.., quick in arranging an appointment for installation Installation team was very skilled and professional. Gary handled end to end paperwork with flexible payment. I really recommend this company for solar setup with battery',
       rating: 5,
-      date: '3 months ago'
+      date: ''
     }
   ],
   images: {
