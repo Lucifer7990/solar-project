@@ -15,6 +15,11 @@
   <meta name="theme-color" content="#10B981" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   
+  <!-- Preconnect to external domains for faster DNS resolution -->
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  
   <!-- Canonical URL -->
   <link rel="canonical" href="https://aussiepremiumsolar.com.au/" />
   
@@ -42,7 +47,9 @@
   
   <base href="/" />
   <link rel="icon" type="image/x-icon" href="logo.png" />
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Phosphor Icons: Only loading used weights (regular and fill) to reduce CSS payload -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" />
   <!-- Schema.org Local Business Structured Data -->
   <script type="application/ld+json">
   {

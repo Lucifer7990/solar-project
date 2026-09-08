@@ -1,19 +1,13 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home';
-import { BlogListComponent } from './pages/blog-list/blog-list';
-import { BlogDetailComponent } from './pages/blog-detail/blog-detail';
-import { ProductListComponent } from './pages/product-list/product-list';
-import { ProductDetailComponent } from './pages/product-detail/product-detail';
-import { PrivacyComponent } from './pages/privacy/privacy';
-import { TermsComponent } from './pages/terms/terms';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'products', component: ProductListComponent },
-  { path: 'products/:slug', component: ProductDetailComponent },
-  { path: 'blog', component: BlogListComponent },
-  { path: 'blog/:slug', component: BlogDetailComponent },
-  { path: 'privacy-policy', component: PrivacyComponent },
-  { path: 'terms-conditions', component: TermsComponent },
+  { path: 'products', loadComponent: () => import('./pages/product-list/product-list').then(m => m.ProductListComponent) },
+  { path: 'products/:slug', loadComponent: () => import('./pages/product-detail/product-detail').then(m => m.ProductDetailComponent) },
+  { path: 'blog', loadComponent: () => import('./pages/blog-list/blog-list').then(m => m.BlogListComponent) },
+  { path: 'blog/:slug', loadComponent: () => import('./pages/blog-detail/blog-detail').then(m => m.BlogDetailComponent) },
+  { path: 'privacy-policy', loadComponent: () => import('./pages/privacy/privacy').then(m => m.PrivacyComponent) },
+  { path: 'terms-conditions', loadComponent: () => import('./pages/terms/terms').then(m => m.TermsComponent) },
   { path: '**', redirectTo: '' }
 ];
