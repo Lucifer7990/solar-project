@@ -27,7 +27,7 @@
     </nav>
 
     <!-- Mobile Menu Toggle Button -->
-    <button (click)="toggleMobileMenu()" class="md:hidden flex items-center focus:outline-none transition-colors duration-300 text-white hover:text-brand-gold">
+    <button (click)="toggleMobileMenu()" aria-label="Toggle mobile menu" class="md:hidden flex items-center focus:outline-none transition-colors duration-300 text-white hover:text-brand-gold">
       <i class="ph text-3xl" [ngClass]="isMobileMenuOpen ? 'ph-x' : 'ph-list'"></i>
     </button>
   </div>
