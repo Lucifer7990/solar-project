@@ -21,9 +21,9 @@
       <a href="/products" class="hover:text-brand-gold transition-colors">Products</a>
       <a href="/blog" class="hover:text-brand-gold transition-colors">Blogs</a>
       
-      <a (click)="popupService.openPopup()" class="cursor-pointer bg-brand-gold hover:bg-brand-navy text-white px-6 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg font-bold">
+      <button type="button" (click)="popupService.openPopup()" class="cursor-pointer bg-brand-gold hover:bg-brand-navy text-white px-6 py-2.5 rounded-full transition-all shadow-md hover:shadow-lg font-bold">
         Get Quote
-      </a>
+      </button>
     </nav>
 
     <!-- Mobile Menu Toggle Button -->
@@ -42,9 +42,9 @@
       <a href="/products" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-white/10 transition-colors">Products</a>
       <a href="/blog" (click)="closeMobileMenu()" class="hover:text-brand-gold py-2 border-b border-white/10 transition-colors">Blogs</a>
       
-      <a (click)="closeMobileMenu(); popupService.openPopup()" class="cursor-pointer bg-brand-gold hover:bg-brand-navy text-white text-center px-6 py-3 rounded-full transition-all shadow-md mt-2 font-bold">
+      <button type="button" (click)="closeMobileMenu(); popupService.openPopup()" class="cursor-pointer bg-brand-gold hover:bg-brand-navy text-white text-center px-6 py-3 rounded-full transition-all shadow-md mt-2 font-bold w-full">
         Get Quote
-      </a>
+      </button>
     </nav>
   </div>
 </header>

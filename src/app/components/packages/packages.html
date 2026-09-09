@@ -64,12 +64,12 @@
                 </ul>
 
                 <div class="grid grid-cols-2 gap-2 mt-auto">
-                  <a href="/products" class="flex justify-center items-center py-2 border border-brand-gold text-brand-navy text-sm font-bold rounded-lg hover:bg-brand-gold/10 transition-colors">
+                  <a href="/products" [attr.aria-label]="'Read more about ' + item.title + ' ' + item.subtitle" class="flex justify-center items-center py-2 border border-brand-gold text-brand-navy text-sm font-bold rounded-lg hover:bg-brand-gold/10 transition-colors">
                     Read More
                   </a>
-                  <a (click)="popupService.openPopup()" class="cursor-pointer flex justify-center items-center py-2 bg-brand-gold text-brand-navy text-sm font-bold rounded-lg hover:bg-brand-gold-light transition-colors shadow-[0_4px_14px_rgba(212,175,55,0.4)] hover:shadow-[0_6px_20px_rgba(212,175,55,0.6)]">
+                  <button type="button" (click)="popupService.openPopup()" class="cursor-pointer flex justify-center items-center py-2 bg-brand-gold text-brand-navy text-sm font-bold rounded-lg hover:bg-brand-gold-light transition-colors shadow-[0_4px_14px_rgba(212,175,55,0.4)] hover:shadow-[0_6px_20px_rgba(212,175,55,0.6)] w-full">
                     Get A Quote
-                  </a>
+                  </button>
                 </div>
               </div>
             }

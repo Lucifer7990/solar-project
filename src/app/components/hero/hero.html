@@ -22,10 +22,10 @@
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 mt-6">
-          <a (click)="popupService.openPopup()" class="cursor-pointer px-8 py-4 bg-brand-gold text-brand-navy text-lg font-bold rounded-xl hover:bg-brand-gold-light transition-colors shadow-lg hover:shadow-brand-gold/50 text-center">
+          <button type="button" (click)="popupService.openPopup()" class="cursor-pointer px-8 py-4 bg-brand-gold text-brand-navy text-lg font-bold rounded-xl hover:bg-brand-gold-light transition-colors shadow-lg hover:shadow-brand-gold/50 text-center w-full sm:w-auto">
             Start Your Solar Journey
-          </a>
-          <a href="/products" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white text-lg font-bold rounded-xl hover:bg-white/20 transition-colors shadow-lg text-center">
+          </button>
+          <a href="/products" aria-label="Learn more about our solar products and packages" class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white text-lg font-bold rounded-xl hover:bg-white/20 transition-colors shadow-lg text-center">
             Learn More
           </a>
         </div>
