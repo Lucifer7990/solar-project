@@ -52,54 +52,54 @@
         
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div>
-            <label class="block text-sm font-medium text-slate-700 mb-1">Name *</label>
-            <input type="text" [ngModel]="name()" (ngModelChange)="name.set($event)" name="name" required
+            <label for="popupName" class="block text-sm font-medium text-slate-700 mb-1">Name *</label>
+            <input type="text" id="popupName" [ngModel]="name()" (ngModelChange)="name.set($event)" name="name" required
               class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all bg-slate-50 focus:bg-white text-sm sm:text-base"
               placeholder="John Doe">
           </div>
           <div>
-            <label class="block text-sm font-medium text-slate-700 mb-1">Phone *</label>
-            <input type="tel" [ngModel]="phone()" (ngModelChange)="phone.set($event)" name="phone" required
+            <label for="popupPhone" class="block text-sm font-medium text-slate-700 mb-1">Phone *</label>
+            <input type="tel" id="popupPhone" [ngModel]="phone()" (ngModelChange)="phone.set($event)" name="phone" required
               class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all bg-slate-50 focus:bg-white text-sm sm:text-base"
               placeholder="0400 000 000">
           </div>
         </div>
 
         <div>
-          <label class="block text-sm font-medium text-slate-700 mb-1">Email *</label>
-          <input type="email" [ngModel]="email()" (ngModelChange)="email.set($event)" name="email" required
+          <label for="popupEmail" class="block text-sm font-medium text-slate-700 mb-1">Email *</label>
+          <input type="email" id="popupEmail" [ngModel]="email()" (ngModelChange)="email.set($event)" name="email" required
             class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all bg-slate-50 focus:bg-white text-sm sm:text-base"
             placeholder="john@example.com">
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div>
-            <label class="block text-sm font-medium text-slate-700 mb-1">Suburb *</label>
-            <input type="text" [ngModel]="suburb()" (ngModelChange)="suburb.set($event)" name="suburb" required
+            <label for="popupSuburb" class="block text-sm font-medium text-slate-700 mb-1">Suburb *</label>
+            <input type="text" id="popupSuburb" [ngModel]="suburb()" (ngModelChange)="suburb.set($event)" name="suburb" required
               class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all bg-slate-50 focus:bg-white text-sm sm:text-base"
               placeholder="e.g. Parramatta">
           </div>
           <div>
-            <label class="block text-sm font-medium text-slate-700 mb-1">Postal Code *</label>
-            <input type="text" [ngModel]="postalCode()" (ngModelChange)="postalCode.set($event)" name="postalCode" required
+            <label for="popupPostalCode" class="block text-sm font-medium text-slate-700 mb-1">Postal Code *</label>
+            <input type="text" id="popupPostalCode" [ngModel]="postalCode()" (ngModelChange)="postalCode.set($event)" name="postalCode" required
               class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all bg-slate-50 focus:bg-white text-sm sm:text-base"
               placeholder="e.g. 2150">
           </div>
         </div>
 
         <div>
-          <label class="block text-sm font-medium text-slate-700 mb-1">Message</label>
-          <textarea [ngModel]="message()" (ngModelChange)="message.set($event)" name="message" rows="2"
+          <label for="popupMessage" class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+          <textarea id="popupMessage" [ngModel]="message()" (ngModelChange)="message.set($event)" name="message" rows="2"
             class="w-full px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all bg-slate-50 focus:bg-white resize-none text-sm sm:text-base"
             placeholder="How can we help you?"></textarea>
         </div>
 
         <!-- CAPTCHA -->
         <div class="flex items-center gap-3 sm:gap-4 bg-slate-50 p-3 sm:p-4 rounded-xl border border-slate-200">
-          <label class="block text-sm font-bold text-slate-700 whitespace-nowrap">
+          <label for="popupCaptcha" class="block text-sm font-bold text-slate-700 whitespace-nowrap">
             What is {{ num1() }} + {{ num2() }}? *
           </label>
-          <input type="number" [ngModel]="captchaAnswer()" (ngModelChange)="captchaAnswer.set($event)" name="captchaAnswer" required
+          <input type="number" id="popupCaptcha" [ngModel]="captchaAnswer()" (ngModelChange)="captchaAnswer.set($event)" name="captchaAnswer" required
             class="w-24 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg border focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all"
             [ngClass]="captchaError() ? 'border-red-500 bg-red-50 text-red-900' : 'border-slate-300 bg-white'">
         </div>

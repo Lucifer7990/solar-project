@@ -79,49 +79,49 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label class="block text-sm font-bold text-slate-500 mb-1.5">Full Name *</label>
-            <input type="text" name="name" [(ngModel)]="name" required
+            <label for="contactName" class="block text-sm font-bold text-slate-500 mb-1.5">Full Name *</label>
+            <input type="text" id="contactName" name="name" [(ngModel)]="name" required
               class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
           </div>
 
           <div>
-            <label class="block text-sm font-bold text-slate-500 mb-1.5">Phone Number *</label>
-            <input type="tel" name="phone" [(ngModel)]="phone" required
+            <label for="contactPhone" class="block text-sm font-bold text-slate-500 mb-1.5">Phone Number *</label>
+            <input type="tel" id="contactPhone" name="phone" [(ngModel)]="phone" required
               class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
           </div>
         </div>
 
         <div>
-          <label class="block text-sm font-bold text-slate-500 mb-1.5">Email Address</label>
-          <input type="email" name="email" [(ngModel)]="email"
+          <label for="contactEmail" class="block text-sm font-bold text-slate-500 mb-1.5">Email Address</label>
+          <input type="email" id="contactEmail" name="email" [(ngModel)]="email"
             class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label class="block text-sm font-bold text-slate-500 mb-1.5">Suburb *</label>
-            <input type="text" name="suburb" [(ngModel)]="suburb" required
+            <label for="contactSuburb" class="block text-sm font-bold text-slate-500 mb-1.5">Suburb *</label>
+            <input type="text" id="contactSuburb" name="suburb" [(ngModel)]="suburb" required
               class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
           </div>
 
           <div>
-            <label class="block text-sm font-bold text-slate-500 mb-1.5">Postal Code *</label>
-            <input type="text" name="postalCode" [(ngModel)]="postalCode" required
+            <label for="contactPostalCode" class="block text-sm font-bold text-slate-500 mb-1.5">Postal Code *</label>
+            <input type="text" id="contactPostalCode" name="postalCode" [(ngModel)]="postalCode" required
               class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium" />
           </div>
         </div>
         
         <div>
-          <label class="block text-sm font-bold text-slate-500 mb-1.5">Message</label>
-          <textarea name="message" [(ngModel)]="message" rows="2"
+          <label for="contactMessage" class="block text-sm font-bold text-slate-500 mb-1.5">Message</label>
+          <textarea id="contactMessage" name="message" [(ngModel)]="message" rows="2"
             class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 outline-none focus:border-brand-gold focus:bg-white transition-colors text-slate-800 text-sm font-medium"></textarea>
         </div>
         
         <!-- Math Captcha & Submit Group -->
         <div class="flex flex-col sm:flex-row items-stretch sm:items-end gap-4 mt-2">
           <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 flex-1 flex flex-col justify-center">
-            <label class="block text-xs font-bold text-slate-500 mb-1">Security Check: What is {{num1()}} + {{num2()}}? *</label>
-            <input type="text" name="captcha" [(ngModel)]="captchaAnswer" required
+            <label for="contactCaptcha" class="block text-xs font-bold text-slate-500 mb-1">Security Check: What is {{num1()}} + {{num2()}}? *</label>
+            <input type="text" id="contactCaptcha" name="captcha" [(ngModel)]="captchaAnswer" required
               class="w-full bg-white border border-slate-300 rounded-lg px-3 py-1.5 outline-none focus:border-brand-gold transition-colors text-slate-800 text-sm font-medium"
               [class.border-red-500]="captchaError()" />
             @if (captchaError()) {
