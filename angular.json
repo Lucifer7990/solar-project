@@ -55,7 +55,7 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
-              "allowedHosts": []
+              "allowedHosts": ["www.aussiepremiumsolar.com.au", "aussiepremiumsolar.com.au"]
             },
             "ssr": {
               "entry": "src/server.ts"
