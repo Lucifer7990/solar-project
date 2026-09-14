@@ -36,7 +36,7 @@ export const siteData = {
         {
           title: '28kWh',
           subtitle: 'Solar Battery Only',
-          image: '/solar_panal1.png',
+          image: '/solar_panal1.webp',
           panelInfo: 'N/A',
           panelDesc: 'Existing Solar Required',
           batteryInfo: '1 x 28kWh',
@@ -50,7 +50,7 @@ export const siteData = {
         {
           title: '42kWh',
           subtitle: 'Solar Battery Only',
-          image: '/solar_panal1.png',
+          image: '/solar_panal1.webp',
           panelInfo: 'N/A',
           panelDesc: 'Existing Solar Required',
           batteryInfo: '1 x 42kWh',
@@ -64,7 +64,7 @@ export const siteData = {
         {
           title: '48kWh',
           subtitle: 'Solar Battery Only',
-          image: '/solar_panal1.png',
+          image: '/solar_panal1.webp',
           panelInfo: 'N/A',
           panelDesc: 'Existing Solar Required',
           batteryInfo: '1 x 48kWh',
@@ -84,7 +84,7 @@ export const siteData = {
         {
           title: '6.6kW',
           subtitle: 'Solar Panels + Solar Battery',
-          image: '/solar_panal1.png',
+          image: '/solar_panal1.webp',
           panelInfo: '14 X 475W',
           panelDesc: 'Tier 1 Solar Panels',
           batteryInfo: '1 X 14kWh',
@@ -98,7 +98,7 @@ export const siteData = {
         {
           title: '10.45kW',
           subtitle: 'Solar Panels + Solar Battery',
-          image: '/solar_panal1.png',
+          image: '/solar_panal1.webp',
           panelInfo: '22 X 475W',
           panelDesc: 'Tier 1 Solar Panels',
           batteryInfo: '1 X 28kWh',
@@ -112,7 +112,7 @@ export const siteData = {
         {
           title: '13.3kW',
           subtitle: 'Solar Panels + Solar Battery',
-          image: '/solar_panal1.png',
+          image: '/solar_panal1.webp',
           panelInfo: '28 X 475W',
           panelDesc: 'Tier 1 Solar Panels',
           batteryInfo: '1 X 42kWh',
@@ -132,7 +132,7 @@ export const siteData = {
         {
           title: '6.6kW',
           subtitle: 'Residential Solar',
-          image: '/solar_panal1.png',
+          image: '/solar_panal1.webp',
           panelInfo: '14 X 475W',
           panelDesc: 'Tier 1 Solar Panels',
           batteryInfo: 'N/A',
@@ -146,7 +146,7 @@ export const siteData = {
         {
           title: '10.45kW',
           subtitle: 'Residential Solar',
-          image: '/solar_panal1.png',
+          image: '/solar_panal1.webp',
           panelInfo: '22 X 475W',
           panelDesc: 'Tier 1 Solar Panels',
           batteryInfo: 'N/A',
@@ -160,7 +160,7 @@ export const siteData = {
         {
           title: '13.3kW',
           subtitle: 'Residential Solar',
-          image: '/solar_panal1.png',
+          image: '/solar_panal1.webp',
           panelInfo: '28 X 475W',
           panelDesc: 'Tier 1 Solar Panels',
           batteryInfo: 'N/A',
@@ -480,9 +480,9 @@ export const siteData = {
           <li class="mb-2"><strong>25-Year Product & 30-Year Performance Warranty:</strong> Long-term peace of mind and guaranteed reliability.</li>
         </ul>
       `,
-      image: '/solar_panal1.png',
+      image: '/solar_panal1.webp',
       images: [
-        '/solar_panal1.png',
+        '/solar_panal1.webp',
         '/solar_panal2.jpeg',
         '/solar_panal3.jpeg'
       ]
