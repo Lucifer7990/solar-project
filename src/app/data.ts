@@ -2,6 +2,18 @@ export const siteData = {
   companyName: 'Aussie Premium Solar',
   tagline: 'Premium Solar & Battery Solutions',
   description: 'Aussie Premium Solar is a proudly Australian company delivering premium solar and battery installations with experienced in-house installers and trusted local workmanship.',
+  heroOffers: [
+    {
+      title: 'Solar + Battery Package 6.6kW + 28kWh',
+      image: '/offer-1.jpeg',
+      alt: 'Limited Time Solar and Battery Special Offer - Aussie Premium Solar'
+    },
+    {
+      title: 'NSW Solar + Battery 10.45kW + 28kWh + 10kW Inverter',
+      image: '/offer-2.jpeg',
+      alt: 'NSW Solar and Battery Special Offer - Aussie Premium Solar'
+    }
+  ],
   deals: [
     {
       size: '6.6 kW',
